@@ -1,0 +1,47 @@
+ [
+    {
+        "name": "Adai Dosai Mix",
+        "price": 200.00,
+        "description": "Get a protein boost with our Adai Dosai Mix. Made with a unique blend of four lentils (Kadalai Paruppu, Thuvaram Paruppu, Ulunthu and Paasi Paruppu), our mix is a nutritious and delicious Protein rich option for your meals. We prioritize protein to give you the best possible dosai experience.Share",
+        "images": [
+            {
+                "image": "/images/adai.jpg"
+            }
+        ],
+        "category": "Millets"
+    },
+    {
+        "name": "Cholam Dosai Mix(Jowar)",
+        "price": 135.00,
+        "description": "Cholam Dosai Mix is Prepared with the blending of Jowar which has a low glycemic index with rice and rava. Ajwain, Asafoetida and Cumin are added to Enhance the Flavour and helps in easy Digestion.",
+        "images": [
+            {
+                "image": "/images/cholam.jpg"
+            }
+        ],
+        "category": "Millets"
+    },
+    {
+        "name": "Kambu Dosai Mix(Pearl Millet)",
+        "price":  135.00,
+        "description": "Kambu Dosai Mix is Prepared with the blending of Kambu which has high Iron content accompanied with rice, rava and jowar. Ajwain, Asafoetida and Cumin are added to Enhance the Flavour and helps in easy Digestion.",
+        "images": [
+            {
+                "image": "/images/kambu.webp"
+            }
+        ],
+        "category": "Millets"
+    },
+    {
+        "name": "Health Mix",
+        "price": 200.00,
+        "description": "Health Mix is the perfect blend of 19 millets and pulses, providing a homemade, nutritional start to your day. Packed with essential nutrients and minerals, this mix ensures a healthy and balanced diet. Give yourself the best start possible with BOON the CHEF Health Mix.",
+        "images": [
+            {
+                "image": "/images/mixed3.jpg"
+            }
+        ],
+        "category": "Millets"
+    }
+]
+

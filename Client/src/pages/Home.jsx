@@ -144,31 +144,15 @@ function Home({cartItems}) {
         <Combo />
       </section>
 
-      <section className="why-choose pt-0 pb-0">
+      <section className="offer-sec ">
         <div className="container" >
-        {/* <h2 className=' fw-bold why-boon'>Why Boon The Chef?</h2> */}
-            {/* <div className="row">
-                <div className="col-12 xm-auto text-center why-choose-sub">
-                    <h2>Why Boon The Chef ?</h2>
-                    
-                </div>
-            </div> */}
-            <div className="row" >
-                <div className="col-12 col-lg-4 pt-5 pb-5">
-                    {/* <div className="why-choose-content text-end" >
-                        <div className="why-choose-inner" >
-                            <h4>Free Delivery<i className="fa-solid fa-truck"></i></h4>
-                            <p>Enjoy free delivery on every purchase, ensuring your orders arrive conveniently at your doorstep</p>
-                        </div>
-                        <div className="why-choose-inner">
-                            <h4>Quality You Can Trust <i className="fa-solid fa-person-military-pointing"></i></h4>
-                            <p> Our products are crafted with meticulous care to deliver exceptional taste and satisfaction.</p>
-                        </div>
-                        <div className="why-choose-inner">
-                            <h4>Prevention & MSG Free <i className="fa-solid fa-star"></i></h4>
-                            <p> Crafted with Prevention in mind, our products are MSG Free for your health-conscious choices. </p>
-                        </div>
-                    </div> */}
+        
+            <div className="row " >
+                <div className="col-12 col-lg-4 p-0 offer-sec-inner">
+                    <div className="offer-content">
+                      <h2 >Offers Comming <br /> Soon</h2>
+                    </div>
+                   
                 </div>
 
                 <div className="col-12 col-lg-4"  >
@@ -177,21 +161,10 @@ function Home({cartItems}) {
                     </div>
                 </div>
 
-                <div className="col-12 col-lg-4 pt-5" >
-                    {/* <div className="why-choose-content" >
-                        <div className="why-choose-inner">
-                            <h4 className="ih"> <i className="fa-solid fa-recycle"></i> Reusable Package</h4>
-                            <p className="ip">Choose our reusable packaging option for sustainable shopping solutions, reducing waste with each order.</p>
-                        </div>
-                        <div className="why-choose-inner">
-                            <h4 className="ih">  <i className="fa-solid fa-kitchen-set"></i> Easy & Effortless Cooking</h4>
-                            <p className="ip"> Discover easy and effortless cooking solutions that simplify meal preparation.</p>
-                        </div>
-                        <div className="why-choose-inner">
-                            <h4 className="ih"><i className="fa-solid fa-leaf"></i> 100% Natural </h4>
-                            <p className="ip"> Discover our products made with 100% natural ingredients, ensuring pure and wholesome goodness in every bite. </p>
-                        </div>
-                    </div> */}
+                <div className="col-12 col-lg-4 p-0 offer-sec-inner " >
+                    <div className="offer-content" >
+                    <h2 >Offers Comming <br /> Soon</h2>
+                    </div>
                 </div>
 
             </div>

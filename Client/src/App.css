@@ -940,6 +940,35 @@ marquee{
   height: auto;
 }
 
+.offer-sec {
+  padding: 50px 0 0 0 !important;
+}
+.offer-sec-inner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.offer-content{
+  text-align: center;
+  width: fit-content;
+height: fit-content;
+}
+.offer-content h2{
+  font-size: 35px;
+  line-height:1.5;
+  background-color: white; 
+  box-shadow: 1px 1px 7px gray;
+  padding: 20px;
+  /* border-radius: 5px; */
+}
+.story p{
+  text-align: justify;
+  font-size: 18px;
+}
+p{
+  font-size: 18px;
+}
+
 @media (max-width:990px){
   .why-boon {
     text-align: center;

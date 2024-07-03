@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react'
+import { Link } from 'react-router-dom'
 
 export default function HomeBanner() {
   return (
@@ -20,7 +21,9 @@ export default function HomeBanner() {
                         Experience effortless preparation and make perfect crispy dosas in minutes. 
                         Order now and bring the taste of India to your kitchen!
                       </p>
-                      <button>Shop Now &nbsp;<i className="fa-solid fa-cart-shopping"></i></button>
+                      <button>
+                         Shop Now &nbsp;<i className="fa-solid fa-cart-shopping"></i>
+                      </button>
                     </div>
                   </div>
                 </div>

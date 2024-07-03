@@ -1,4 +1,5 @@
 import { Carousel } from 'react-bootstrap';
+import {Link} from "react-router-dom"
 
 export default function ShopnowBox() {
     return (
@@ -11,7 +12,7 @@ export default function ShopnowBox() {
                         </div>
                         <div className="col-lg-3 d-flex justify-content-center align-items-center">
                             <button className="btn btn-light">
-                                Shop Now &nbsp; <i className="fa-solid fa-cart-shopping"></i>
+                            <Link to={"/products"} className='no-underline'>Shop Now &nbsp; <i className="fa-solid fa-cart-shopping"></i></Link> 
                             </button>
                         </div>
                     </div>

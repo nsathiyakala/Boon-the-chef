@@ -1,78 +1,78 @@
 import React, { Fragment } from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Footer() {
-  return (
-    <Fragment>
-        <footer>
-            <div className='container footer-container'>
-                <div className='row'>
-                    <div className='col-12 col-md-6 footer-content-col' >
-                        <div className='footer-content p-5'>
-                            <div>
-                                <img className='img-fluid footer-logo' src="./images/logo.png" alt="logo" />
+    return (
+        <Fragment>
+            <footer>
+                <div className='container footer-container'>
+                    <div className='row'>
+                        <div className='col-12 col-md-6 footer-content-col' >
+                            <div className='footer-content p-5'>
+                                <div>
+                                    <img className='img-fluid footer-logo' src="./images/logo.png" alt="logo" />
+                                </div>
+                                <h1>Boon The Chef</h1>
+                                <p>
+                                AR Foods, spanning four generations, preserves cherished recipes from our great grandmother, delivering traditional flavors and nostalgia worldwide.
+                                </p>
                             </div>
-                            <h1>Boon The Chef</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero doloribus suscipit quam distinctio accusamus at optio! Molestiae, cupiditate iusto, soluta molestias architecto ipsa quae dolorem, non temporibus dolorum accusantium odit?</p>
                         </div>
-                    </div>
 
-                    <div className='col-12 col-md-3 footer-content-col' >
-                        <div className='footer-content pt-5'>
-                            <h3>Quick Links</h3>
-                            <ul>
-                                <li>About</li>
-                                <li>Cart</li>
-                                <li>Checkout</li>
-                                <li>Contact</li>
-                                <li>My Account</li>
-                            </ul>
+                        <div className='col-12 col-md-3 footer-content-col' >
+                            <div className='footer-content pt-5'>
+                                <h3>Quick Links</h3>
+                                <ul >
+                                    <li><Link to='/home' className='text-light no-underline'>Home</Link></li>
+                                    <li><Link to='/about' className='text-light no-underline'>About</Link></li>
+                                    <li><Link to='/products'className='text-light no-underline'>Product</Link></li>
+                                    <li><Link to='/contact' className='text-light no-underline'>Contact</Link></li>
+                                </ul>
 
-                        </div>
-                    </div>
-
-                    <div className='col-12 col-md-3 footer-content-col' >
-                        <div className='footer-content pt-5'>
-                            <h3>Site Links</h3>
-                            <ul>
-                                <li>Privacy Policy</li>
-                                <li>Shipping Details</li>
-                                <li>Offers Coupons</li>
-                                <li>Terms & Conditions</li>
-                                <li>Shop</li>
-                            </ul>
-
-                        </div>
-                    </div>
-                </div>
-                <div className='row'>
-                    <div className='col-12 col-md-6 footer-content-col' >
-                        <div className='footer-content p-5'>
-                            <h3>Follow Us On</h3>
-                            <div className='footer-icons'>
-                                <i class="fa-solid fa-envelope"></i>
-                                <i class="fa-brands fa-instagram"></i>
-                                <i class="fa-brands fa-amazon"></i>
-                                <i class="fa-brands fa-facebook"></i>
                             </div>
-                         
+                        </div>
+
+                        <div className='col-12 col-md-3 footer-content-col' >
+                            <div className='footer-content pt-5'>
+                                <h3>Site Links</h3>
+                                <ul>
+                                    <li><Link to='/cart' className='text-light no-underline'>Shipping Details</Link></li>
+                                    <li><Link to='/comboproducts' className='text-light no-underline'>Combos</Link></li>
+                                    <li> <Link to={"/privacy-policy"} className='text-light no-underline'> Privacy Policy</Link></li>
+                                </ul>
+
+                            </div>
                         </div>
                     </div>
+                    <div className='row'>
+                        <div className='col-12 col-md-6 footer-content-col' >
+                            <div className='footer-content p-5'>
+                                <h3>Follow Us On</h3>
+                                <div className='footer-icons'>
+                                    <i class="fa-solid fa-envelope"></i>
+                                    <i class="fa-brands fa-instagram"></i>
+                                    <i class="fa-brands fa-amazon"></i>
+                                    <i class="fa-brands fa-facebook"></i>
+                                </div>
 
-                    <div className='col-12 col-md-3 footer-content-col' >
-                        <div className='footer-content pt-5'>
-                            <h3>Address</h3>
-                            <p>
-                            XYZ Corporation
-                            1234 Elm Street
-                            Suite 567
-                            Springfield, IL 62704
-                            USA
-                            </p>
-
+                            </div>
                         </div>
-                    </div>
 
-                    {/* <div className='col-12 col-md-3 footer-content-col' >
+                        <div className='col-12 col-md-3 footer-content-col' >
+                            <div className='footer-content pt-5'>
+                                <h3>Address</h3>
+                                <p>
+                                    XYZ Corporation
+                                    1234 Elm Street
+                                    Suite 567
+                                    Springfield, IL 62704
+                                    USA
+                                </p>
+
+                            </div>
+                        </div>
+
+                        {/* <div className='col-12 col-md-3 footer-content-col' >
                         <div className='footer-content pt-5'>
                             <h3>Site Links</h3>
                             <ul>
@@ -85,9 +85,9 @@ export default function Footer() {
 
                         </div>
                     </div> */}
+                    </div>
                 </div>
-            </div>
-        </footer>
-    </Fragment>
-  )
+            </footer>
+        </Fragment>
+    )
 }

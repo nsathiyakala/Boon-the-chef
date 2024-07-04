@@ -1,8 +1,9 @@
 import React from 'react';
-import { useLocation } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 const Checkout = () => {
   const location = useLocation();
+  const navigate = useNavigate();
   const { shippingDetails, cartItems } = location.state || {};
 
   if (!shippingDetails || !cartItems) {
@@ -10,6 +11,81 @@ const Checkout = () => {
   }
 
   const total = cartItems.reduce((acc, item) => acc + item.product.price * item.quantity, 0);
+
+  const handlePaymentSuccess = async (paymentDetails) => {
+    try {
+      const response = await fetch('/api/sendEmail', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          buyerEmail: shippingDetails.email, // Assuming email is part of shippingDetails
+          sellerEmail: 'seller@example.com', // Replace with actual seller's email
+          checkoutDetails: { shippingDetails, cartItems, paymentDetails },
+          paymentStatus: 'Success',
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to send emails');
+      }
+
+      const result = await response.json();
+      console.log('Emails sent successfully:', result);
+      navigate('/order-success');
+    } catch (error) {
+      console.error('Error sending emails:', error);
+      // Handle error
+    }
+  };
+
+  const loadRazorpayScript = () => {
+    return new Promise((resolve) => {
+      const script = document.createElement('script');
+      script.src = 'https://checkout.razorpay.com/v1/checkout.js';
+      script.onload = () => resolve(true);
+      script.onerror = () => resolve(false);
+      document.body.appendChild(script);
+    });
+  };
+
+  const handlePayment = async () => {
+    const res = await loadRazorpayScript();
+
+    if (!res) {
+      alert('Razorpay SDK failed to load. Are you online?');
+      return;
+    }
+
+    const options = {
+      key: 'rzp_test_OXYGhEnON13iER',
+      key_secret:"J9wzb19hWFmpUbrRGvQkVBp7",
+      amount: total * 100, // Razorpay accepts amount in paise
+      currency: 'INR',
+      name: 'Boon The Chef',
+      description: 'testing purpose',
+      image: 'https://example.com/your_logo',
+      handler: function (response) {
+        console.log(response);
+        handlePaymentSuccess(response);
+      },
+      prefill: {
+        name: shippingDetails.fullName,
+        email: shippingDetails.email,
+        contact: shippingDetails.phoneNumber,
+      },
+      notes: {
+        address: shippingDetails.address,
+      },
+      theme: {
+        color: '#3399cc',
+      },
+    };
+
+    const paymentObject = new window.Razorpay(options);
+    paymentObject.open();
+  };
 
   return (
     <div className="checkout-page">
@@ -34,7 +110,9 @@ const Checkout = () => {
         ))}
         <h4>Total: ${total.toFixed(2)}</h4>
       </div>
-      <button className="btn btn-black">Proceed to Payment</button>
+      <button className="btn btn-black" onClick={handlePayment}>
+        Proceed to Payment
+      </button>
     </div>
   );
 };

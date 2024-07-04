@@ -1,4 +1,4 @@
-const ProductModel = require('../models/productModel');
+const ProductModel = require('../models/productModel')
 const wholeProductModel = require('../models/wholeProductModel')
 
 // Get all products - GET /boonthechef/products
@@ -6,7 +6,7 @@ exports.getProducts = async (req, res, next) => {
  
     try {
         const category = req.query.category;
-        const products = await productModel.find(category ? { category } : {});
+        const products = await ProductModel.find(category ? { category } : {});
         res.json({
             success: true,
             products

@@ -13,7 +13,7 @@ const Checkout = () => {
 
   return (
     <div className="checkout-page">
-      <h2>Checkout</h2>
+      <h2>Checkout page</h2>
       <div className="shipping-details">
         <h3>Shipping Information</h3>
         <p>{shippingDetails.fullName}</p>

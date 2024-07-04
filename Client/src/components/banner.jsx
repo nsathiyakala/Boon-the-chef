@@ -30,7 +30,11 @@ export default function HomeBanner() {
               </div>
         </div>
       </section> */}
-      <section className='home-banner-sec'><div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
+
+
+
+      <section className='home-banner-sec'>
+        <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -48,18 +52,18 @@ export default function HomeBanner() {
                     </div>
                 </div>
                 <div className="carousel-item" style={{backgroundColor:"#005395"}}>
-                    <img src="/images/millets.jpg" className="d-block w-100" alt="..." />
+                    <img src="/images/millets-banner.jpg" className="d-block w-100" alt="..." />
                     <div class="carousel-caption">
                         {/* <p className=''> Nourishing Hearts, One Good Deed at a Time!</p> */}
-                        <h5>MILLETS</h5>
+                        <h5 className='text-dark'>MILLETS</h5>
 
                     </div>
                 </div>
                 <div className="carousel-item">
                     <img src="/images/spice.jpg" className="d-block w-100" alt="..." />
-                    <div class="carousel-caption center-caption">
+                    <div class="carousel-caption">
                         {/* <p className=''>Tending to the Garden of Goodness with Care and Commitment</p> */}
-                        <h5>SPICE</h5>
+                        <h5 className='text-dark'>SPICES</h5>
 
                     </div>
                 </div>
@@ -67,7 +71,7 @@ export default function HomeBanner() {
                     <img src="/images/herbs.jpg" className="d-block w-100" alt="..." />
                     <div class="carousel-caption center-caption">
                         {/* <p className=''>Tending to the Garden of Goodness with Care and Commitment</p> */}
-                        <h5>HERBS</h5>
+                        {/* <h5>HERBS</h5> */}
 
                     </div>
                 </div>
@@ -85,57 +89,6 @@ export default function HomeBanner() {
 
 
      
-{/* 
-      <section className='feature-Section'>
-        <div className='container'>
-          <div className='row'>
-            <div className='col-12 col-md-6 col-lg-3 feature-content-col'>
-              <div className='feature-content'>
-              <i class="fa-solid fa-truck"></i>
-              <div>
-                <h3>Free Shipping</h3>
-                <p>Above ₹100</p>
-              </div>
-             
-              </div>
-             
-            </div>
-            <div className='col-12 col-md-6 col-lg-3 feature-content-col'>
-              <div className='feature-content'>
-              <i class="fa-solid fa-circle-check"></i>
-              <div>
-                <h3>Certified Organic</h3>
-                <p>100% Guarantee</p>
-              </div>
-             
-              </div>
-             
-            </div>
-            <div className='col-12 col-md-6 col-lg-3 feature-content-col'>
-              <div className='feature-content'>
-              <i class="fa-solid fa-money-bill"></i>
-              <div>
-                <h3>Huge Savings</h3>
-                <p>At Lowest Price</p>
-              </div>
-             
-              </div>
-             
-            </div>
-            <div className='col-12 col-md-6 col-lg-3 feature-content-col'>
-              <div className='feature-content'>
-              <i class="fa-solid fa-recycle"></i>
-              <div>
-                <h3>Easy Returns</h3>
-                <p>No Questions Asked</p>
-              </div>
-             
-              </div>
-             
-            </div>
-          </div>
-        </div>
-      </section> */}
     </Fragment>
   )
 }

@@ -13,8 +13,10 @@ import Cart from './pages/cart';
 import Navbar from './components/navbar';
 import Footer from './components/footerpage';
 import ComboProducts from './pages/comboProducts';
-import Checkout from './pages/checkout';
+
 import ScrollToTop from './components/Scrooltotop';
+import ShippingInfo from './pages/ShipppingInfo';
+import Checkout from './pages/checkout';
 
 // import Search from './components/search';
  
@@ -27,7 +29,7 @@ function App() {
       <div>
         <ToastContainer theme='light' position='top-center'/>
         <Navbar cartItems={cartItems} />
-        <ScrollToTop/>s
+        <ScrollToTop/>
         <Routes>
         
           
@@ -42,7 +44,10 @@ function App() {
           <Route path='/products/:id' element={<WholeProductDetails/>}/>
           <Route path='/cart' element={<Cart cartItems={cartItems} setCartItems={setCartItems}/>}/>
           <Route path='/comboproducts' element={<ComboProducts/>} />
-          <Route path='/checkoutpage' element={<Checkout/>} />
+          <Route path="/shippinginfo" element={<ShippingInfo cartItems={cartItems}/>}/>
+          <Route path='/checkout' element={<Checkout/>}/>
+          
+          
           
 
 

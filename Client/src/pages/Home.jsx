@@ -34,16 +34,16 @@ function Home({cartItems}) {
     <Fragment>
       <HomeBanner />
 
-      <section className=' What-are-we p-5' >
+      {/* <section className=' What-are-we p-5' >
         <div className=' container p-0'>
           <div className='row p-0' >
                 <div className='col-12 col-lg-6 What-are-we-content'>
                   <div className='content-inner'>
-                    {/* <h2>What Are We</h2>
-                    <p className='wl-content'>Welcome to Boon The Chef, where tradition meets health in every bite. Our mission is to bring back the essence of ancient culinary wisdom through our range of naturally prepared, nutrient-rich instant dosa mixes and health mixes. We are committed to providing you with wholesome, convenient, and delicious options that support your well-being.</p> */}
+                    <h2>What Are We</h2>
+                    <p className='wl-content'>Welcome to Boon The Chef, where tradition meets health in every bite. Our mission is to bring back the essence of ancient culinary wisdom through our range of naturally prepared, nutrient-rich instant dosa mixes and health mixes. We are committed to providing you with wholesome, convenient, and delicious options that support your well-being.</p>
                     <h3 className='mb-5 slogan-1'>Herb  |  Millet  |  Spice</h3>
                     <h2>What Are We</h2>
-                    {/* <p>At Boon The Chef, we offer a diverse selection of instant dosa mixes made from traditional grains and pulses. Each mix is crafted to preserve the authentic flavors and nutritional benefits of the ingredients used in ancient recipes. Our range includes</p>
+                    <p>At Boon The Chef, we offer a diverse selection of instant dosa mixes made from traditional grains and pulses. Each mix is crafted to preserve the authentic flavors and nutritional benefits of the ingredients used in ancient recipes. Our range includes</p>
                     <ul className='content-ul'>
                         <li><strong>Rava Dosa Mix</strong>: Light and crispy, made from semolina for a quick and tasty meal.</li>
                         <li><strong>Adai Dosa Mix</strong>: Protein-packed mix of lentils and rice, perfect for a nutritious breakfast.</li>
@@ -54,7 +54,7 @@ function Home({cartItems}) {
                         <li><strong>Kuthiraivaali (Barnyard Millet) Dosa Mix</strong>: High in fiber, aids in digestion.</li>
                         <li><strong>Saamai (Little Millet) Dosa Mix</strong>: Gluten-free, perfect for those with dietary restrictions.</li>
                         <li><strong>Varagu (Kodo Millet) Dosa Mix</strong>: Low in fat, beneficial for weight management.</li>
-                    </ul> */}
+                    </ul>
                                           <h3>Brand Mission</h3>
                         <p className='about-paragraph mt-3'>
                             <b>Empowering Delicious Choices: </b>
@@ -78,7 +78,7 @@ function Home({cartItems}) {
           </div>
         </div>
       
-      </section>
+      </section> */}
 
       {/* -------------why-choos---------------------- */}
 

@@ -43,5 +43,5 @@ export default function Navbar({ cartItems }) {
         </div>
       </nav>
     </Fragment>
-  );
+  )
 }

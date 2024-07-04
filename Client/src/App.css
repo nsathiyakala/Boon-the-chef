@@ -8,6 +8,38 @@ body{
   font-weight: 300;
   font-style: normal;
 }
+/* carousel start-------------------- */
+.home-banner-sec .carousel-inner{
+  background-color: #005395;
+}
+
+.home-banner-sec .carousel-item{
+  position: relative;
+}
+.home-banner-sec .carousel-caption{
+  /* border: 1px solid black; */
+  position: absolute;
+  bottom: 300px;
+  /* left: 0; */
+  width: fit-content;
+}
+.home-banner-sec .carousel-caption h5{
+  font-family: "Londrina Solid", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 70px;
+}
+.home-banner-sec .carousel-caption p{
+  font-size: 20px;
+}
+
+.home-banner-sec .center-caption{
+  position: absolute;
+  bottom: 280px;
+  left: 0 !important;
+  width: 100% !important;
+  /* border: 1px solid black; */
+}
 /* navbar start *//* Navbar */
 
 .navbar{
@@ -58,79 +90,6 @@ text-align: center;
 /* navbar end */
 
 /* -----------------------banner-sec-start----------------------------------- */
-
-.home-banner-sec{
-  width: 100%;
-
-}
-.Home-banner {
-  /* padding: 100px 0 0 0; */
-  height:100vh ;
-  margin-top: 0;
-  background-image: url('../public/images/kuthiraivaali.jpg');
-  background-repeat: no-repeat;
-  background-size: cover; 
-  background-position:center;
-  background-attachment: fixed;
-  /* position: ;  */
-  color: white;
-}
-.home-banner-sec {
-  position: relative;
-  z-index: -2;
-}
-
-.home-banner-sec::before {
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 2;
-}
-
-.home-banner-content-container{
-  z-index: 200; 
-}
-
-
-.Home-banner-container{
-  /* border: 1px solid blue; */
-  padding: 40px 30px;
-  overflow: hidden;
-  
-}
-
-
-.home-banner-content-container{
-  /* border: 1px solid red; */
-  padding: 80px 0;
-  /* display: flex;
-  align-items: end; */
-}
-.home-banner-content{
-  /* border: 1px solid blue; */
-  padding: 30px ;
-}
-/* .home-banner-content h5{
-  color: #35530a;
-} */
-.home-banner-content h1{
-  font-size: 50px;
-  padding: 10px 0;
-  color: white;
-}
-.home-banner-content p{
-  padding: 10px 0;
-}
-.home-banner-content button{
-  padding: 10px 30px;
-  border-radius: 5px;
-  background-color: #35530a;
-  color: white;
-  border: none;
-}
 
 /* --------------------------home banner end-------------------------- */
 
@@ -484,6 +443,18 @@ footer{
 
 .abouts-row {
   margin-top: 20px;
+}
+.slogan-1 button{
+  border-right: 2px solid black;
+}
+
+
+.slogan-1 .active{
+  background-color:black;
+  color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    border-right: 2px solid black;
 }
 
 .product-list {

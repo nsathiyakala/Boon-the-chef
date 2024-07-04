@@ -14,6 +14,7 @@ import Navbar from './components/navbar';
 import Footer from './components/footerpage';
 import ComboProducts from './pages/comboProducts';
 import Checkout from './pages/checkout';
+import ScrollToTop from './components/Scrooltotop';
 
 // import Search from './components/search';
  
@@ -26,6 +27,7 @@ function App() {
       <div>
         <ToastContainer theme='light' position='top-center'/>
         <Navbar cartItems={cartItems} />
+        <ScrollToTop/>s
         <Routes>
         
           

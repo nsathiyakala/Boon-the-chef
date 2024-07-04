@@ -21,8 +21,10 @@ export default function About() {
                             To Become Every Household Favorite to transform Day to Day Eatables into delicious healthy and affordable options with the twist of traditional and natural ingredients.</p>
                         <p className='mt-3'>
                             <b>Create your combo Description: </b>
-                            You are the Master Chef, Craft your combo, Your way.                        </p>
+                            You are the Master Chef, Craft your combo, Your way.                    
+                        </p>
                     </div>
+
                     <div className='col-lg-6 p-5'>
                         <img className='img-fluid' src='./images/mixed1.jpg' alt='Mixed' />
                     </div>

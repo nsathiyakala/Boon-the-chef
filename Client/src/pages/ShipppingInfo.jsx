@@ -9,7 +9,8 @@ const ShippingInfo = ({ cartItems }) => {
     state: '',
     zipCode: '',
     country: '',
-    phoneNumber: ''
+    phoneNumber: '',
+    email:''
   });
 
   const navigate = useNavigate();
@@ -35,7 +36,7 @@ const ShippingInfo = ({ cartItems }) => {
           <div className="row shipping-info mt-4">
             <div className="col-lg-10">
               <div className="row">
-                <div className="col-lg-6">
+                <div className="col-12 col-lg-6">
 
                   <label>Full Name:</label>
                   <input
@@ -48,7 +49,7 @@ const ShippingInfo = ({ cartItems }) => {
 
                 </div>
 
-                <div className="col-lg-6">
+                <div className="col-12 col-lg-6">
                   <label>Phone Number:</label>
                   <input
                     type="text"
@@ -58,7 +59,7 @@ const ShippingInfo = ({ cartItems }) => {
                     required
                   />
                 </div>
-                <div className="col-lg-12">
+                <div className="col-12 col-lg-6">
 
                   <label>Address:</label>
                   <input
@@ -70,7 +71,21 @@ const ShippingInfo = ({ cartItems }) => {
                   />
 
                 </div>
-                <div className="col-lg-6">
+
+                <div className="col-12 col-lg-6">
+
+                  <label>Email:</label>
+                  <input
+                    type="text"
+                    name="email"
+                    value={shippingDetails.email}
+                    onChange={handleChange}
+                    required
+                  />
+
+                </div>
+
+                <div className="col-12 col-lg-6">
                   <label>City:</label>
                   <input
                     type="text"
@@ -81,7 +96,7 @@ const ShippingInfo = ({ cartItems }) => {
                   />
                 </div>
 
-                <div className="col-lg-6" >
+                <div className="col-12 col-lg-6" >
                   <label>State:</label>
                   <input
                     type="text"
@@ -91,7 +106,7 @@ const ShippingInfo = ({ cartItems }) => {
                     required
                   />
                 </div>
-                <div className="col-lg-6">
+                <div className="col-12 col-lg-6">
                   <label>Zip Code:</label>
                   <input
                     type="text"
@@ -101,7 +116,7 @@ const ShippingInfo = ({ cartItems }) => {
                     required
                   />
                 </div>
-                <div className="col-lg-6">
+                <div className="col-12 col-lg-6">
                   <label>Country:</label>
                   <input
                     type="text"

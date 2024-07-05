@@ -14,12 +14,13 @@ app.use(bodyParser.json())
 connectDatabase();
 
 const products = require('./routes/product');
-const orderConfirm = require('./routes/orderConfirm')
+const sendEmail  = require('./routes/mail');
+// const orderConfirm = require('./routes/orderConfirm')
 // const orders = require('./routes/order');
 
 app.use('/boonthechef', products);
-app.use('boonthechef',orderConfirm)
-// app.use('/boonthechef', orders);
+
+app.use('/boonthechef', sendEmail );
 // app.use('/boonthechef',wholeProduct)
 
 app.listen(process.env.PORT, () => {

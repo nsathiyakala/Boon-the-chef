@@ -30,7 +30,7 @@ export default function ComboProducts({ cartItems, setCartItems }) {
       
       if (updatedSelectedProduct.length === 3) {
         // toast.success('3 Products added to your Combo')
-        navigate('/checkoutpage', { state: { selectedProduct: updatedSelectedProduct } });
+        navigate('/combocart', { state: { selectedProduct: updatedSelectedProduct } });
       }
 
       return updatedSelectedProduct; 

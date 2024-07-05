@@ -963,3 +963,30 @@ p{
   
   }
 }
+
+/* shipping info start--------------- */
+.shipping-info{
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.shipping-info button{
+  background-color: #000;
+  color: white;
+  border-radius: 5px;
+  margin-left: 450px;
+  padding: 10px 30px;
+  margin-top: 30px;
+}
+.shipping-info button:hover{
+  background-color: white;
+  color: black;
+ 
+}
+
+@media (max-width:768px)
+{
+  .shipping-info button{
+    margin-left: 150px;
+  }
+}

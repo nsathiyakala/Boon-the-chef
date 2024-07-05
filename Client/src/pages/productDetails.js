@@ -1,5 +1,5 @@
 import React, { Fragment, useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { toast } from 'react-toastify';
 import Footer from "../components/footerpage";
 import Navbar from "../components/navbar";
@@ -68,6 +68,8 @@ export default function ProductDetails({ cartItems, setCartItems }) {
               />
             </div>
             <button onClick={handleAddToCart} className="btn btn-dark text-white">Add to Cart</button>
+            <Link to='/cart'><button onClick={handleAddToCart} className="btn btn-dark text-white mx-2">Order Now</button>
+            </Link>
           </div>
         </div>
       </div>

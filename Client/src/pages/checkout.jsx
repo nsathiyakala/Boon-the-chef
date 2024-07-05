@@ -60,7 +60,7 @@ const Checkout = () => {
 
     const options = {
       key: 'rzp_test_OXYGhEnON13iER',
-      key_secret:"J9wzb19hWFmpUbrRGvQkVBp7",
+      key_secret: "J9wzb19hWFmpUbrRGvQkVBp7",
       amount: total * 100, // Razorpay accepts amount in paise
       currency: 'INR',
       name: 'Boon The Chef',
@@ -89,38 +89,47 @@ const Checkout = () => {
 
   return (
     <div className="checkout-page" >
-      <div className='container-fluid about' style={{border:"height:100px !important"}}>
-         <h1>Checkout page</h1>
+      <div className='container-fluid about' style={{ border: "height:100px !important" }}>
+        <h1>Checkout page</h1>
       </div>
-     <div className='container' style={{border:"1px solid red"}}>
+      <div className='container' style={{ border: "1px solid red" }}>
 
-     <div className="order-summary">
-        <h3>Order Summary</h3>
-        {cartItems.map((item) => (
-          <div key={item.product._id} className="cart-item">
-            <img src={item.product.images[0].image} alt="Product" />
-            <p>{item.product.name}</p>
-            <p>Quantity: {item.quantity}</p>
-            <p>Price: ${item.product.price}</p>
+        <div className="order-summary">
+          <h3>Order Summary</h3>
+          <div className="row">
+            <div className="col-lg-8">
+              {cartItems.map((item) => (
+                <div key={item.product._id} className="cart-item">
+                  <img src={item.product.images[0].image} alt="Product" />
+                  <p>{item.product.name}</p>
+                  <p>Quantity: {item.quantity}</p>
+                  <p>Price: ${item.product.price}</p>
+                </div>
+              ))}
+              <h4>Total: ${total.toFixed(2)}</h4>
+            </div>
+            
+            <div className="col-lg-4">
+            <div className="shipping-details">
+              <h3>Shipping Information</h3>
+              <p>{shippingDetails.fullName}</p>
+              <p>{shippingDetails.address}</p>
+              <p>{shippingDetails.city}, {shippingDetails.state} {shippingDetails.zipCode}</p>
+              <p>{shippingDetails.country}</p>
+              <p>{shippingDetails.phoneNumber}</p>
+            </div>
+              <button className="btn btn-black" onClick={handlePayment}>
+                Proceed to Payment
+              </button>
+            </div>
           </div>
-        ))}
-        <h4>Total: ${total.toFixed(2)}</h4>
-      </div>
-      <div className="shipping-details">
-        <h3>Shipping Information</h3>
-        <p>{shippingDetails.fullName}</p>
-        <p>{shippingDetails.address}</p>
-        <p>{shippingDetails.city}, {shippingDetails.state} {shippingDetails.zipCode}</p>
-        <p>{shippingDetails.country}</p>
-        <p>{shippingDetails.phoneNumber}</p>
-      </div>
-     
-      <button className="btn btn-black" onClick={handlePayment}>
-        Proceed to Payment
-      </button>
+        </div>
 
-     </div>
-     
+
+
+
+      </div>
+
     </div>
   );
 };

@@ -79,7 +79,7 @@ const Checkout = () => {
         address: shippingDetails.address,
       },
       theme: {
-        color: '#3399cc',
+        color: '#fff',
       },
     };
 
@@ -88,17 +88,13 @@ const Checkout = () => {
   };
 
   return (
-    <div className="checkout-page">
-      <h2>Checkout page</h2>
-      <div className="shipping-details">
-        <h3>Shipping Information</h3>
-        <p>{shippingDetails.fullName}</p>
-        <p>{shippingDetails.address}</p>
-        <p>{shippingDetails.city}, {shippingDetails.state} {shippingDetails.zipCode}</p>
-        <p>{shippingDetails.country}</p>
-        <p>{shippingDetails.phoneNumber}</p>
+    <div className="checkout-page" >
+      <div className='container-fluid about' style={{border:"height:100px !important"}}>
+         <h1>Checkout page</h1>
       </div>
-      <div className="order-summary">
+     <div className='container' style={{border:"1px solid red"}}>
+
+     <div className="order-summary">
         <h3>Order Summary</h3>
         {cartItems.map((item) => (
           <div key={item.product._id} className="cart-item">
@@ -110,9 +106,21 @@ const Checkout = () => {
         ))}
         <h4>Total: ${total.toFixed(2)}</h4>
       </div>
+      <div className="shipping-details">
+        <h3>Shipping Information</h3>
+        <p>{shippingDetails.fullName}</p>
+        <p>{shippingDetails.address}</p>
+        <p>{shippingDetails.city}, {shippingDetails.state} {shippingDetails.zipCode}</p>
+        <p>{shippingDetails.country}</p>
+        <p>{shippingDetails.phoneNumber}</p>
+      </div>
+     
       <button className="btn btn-black" onClick={handlePayment}>
         Proceed to Payment
       </button>
+
+     </div>
+     
     </div>
   );
 };

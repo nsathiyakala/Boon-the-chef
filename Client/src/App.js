@@ -13,7 +13,7 @@ import Cart from './pages/cart';
 import Navbar from './components/navbar';
 import Footer from './components/footerpage';
 import ComboProducts from './pages/comboProducts';
-
+import ComboCart from "./pages/comboCart"
 import ScrollToTop from './components/Scrooltotop';
 import ShippingInfo from './pages/ShipppingInfo';
 import Checkout from './pages/checkout';
@@ -44,6 +44,7 @@ function App() {
           <Route path='/products/:id' element={<WholeProductDetails/>}/>
           <Route path='/cart' element={<Cart cartItems={cartItems} setCartItems={setCartItems}/>}/>
           <Route path='/comboproducts' element={<ComboProducts/>} />
+          <Route path='/combocart' element={<ComboCart/>}/>
           <Route path="/shippinginfo" element={<ShippingInfo cartItems={cartItems}/>}/>
           <Route path='/checkout' element={<Checkout/>}/>
           

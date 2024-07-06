@@ -91,36 +91,48 @@ const Checkout = () => {
   };
 
   return (
-    <div className="checkout-page" >
-      <div className='container-fluid about' style={{border:"height:100px !important"}}>
-         <h1>Checkout page</h1>
+    <div className="checkout-page">
+      <div className='container-fluid about'>
+        <h1>Checkout page</h1>
       </div>
-      <div className='container' style={{ border: "1px solid red" }}>
+      <div className='container'>
 
-     <div className="order-summary">
-        <h3>Order Summary</h3>
-        {cartItems.map((item) => (
-          <div key={item.product._id} className="cart-item">
-            <img src={item.product.images[0].image} alt="Product" />
-            <p>{item.product.name}</p>
-            <p>Quantity: {item.quantity}</p>
-            <p>Price: ${item.product.price}</p>
+        <div className="order-summary">
+          <h3>Order Summary</h3>
+          <div className="row">
+            <div className="col-lg-8">
+
+              {cartItems.map((item) => (
+                <div key={item.product._id} className="cart-item row">
+                  <div className="col-3">
+                    <img src={item.product.images[0].image} alt="Product" className="product-image"/>
+                  </div>
+                  <div className="col-9">
+                    <p>{item.product.name}</p>
+                    <p>Quantity: {item.quantity}</p>
+                    <p>Price: ${item.product.price}</p>
+                  </div>
+                </div>
+              ))}
+              <h4>Total: ${total.toFixed(2)}</h4>
+            </div>
+            <div className="col-lg-4">
+              <div className="shipping-details">
+                <h3>Shipping Information</h3>
+                <p>{shippingDetails.fullName}</p>
+                <p>{shippingDetails.address}</p>
+                <p>{shippingDetails.city}, {shippingDetails.state} {shippingDetails.zipCode}</p>
+                <p>{shippingDetails.country}</p>
+                <p>{shippingDetails.phoneNumber}</p>
+              </div>
+
+              <button className="btn btn-black" onClick={handlePayment}>
+                Proceed to Payment
+              </button>
+            </div>
           </div>
-        ))}
-        <h4>Total: ${total.toFixed(2)}</h4>
-      </div>
-      <div className="shipping-details">
-        <h3>Shipping Information</h3>
-        <p>{shippingDetails.fullName}</p>
-        <p>{shippingDetails.address}</p>
-        <p>{shippingDetails.city}, {shippingDetails.state} {shippingDetails.zipCode}</p>
-        <p>{shippingDetails.country}</p>
-        <p>{shippingDetails.phoneNumber}</p>
-      </div>
-     
-      <button className="btn btn-black" onClick={handlePayment}>
-        Proceed to Payment
-      </button>
+
+        </div>
 
       </div>
 

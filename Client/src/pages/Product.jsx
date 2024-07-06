@@ -52,16 +52,16 @@ export default function Products() {
                         </div>
                         <div className='container'>
                             <div className='row'>
-                                {category == "Herbs" && <h2 className='text-center'>{message}</h2>}
+                                {category === "Herbs" && <h2 className='text-center'>{message}</h2>}
                                 {products && products.map(product => <ProductCard key={product._id} product={product} />)}
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div className='all-products-sec'>
+            {/* <div className='all-products-sec'>
                 <h2></h2>
-            </div>
+            </div> */}
         </Fragment>
     );
 }

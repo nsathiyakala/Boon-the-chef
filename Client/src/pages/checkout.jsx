@@ -1,9 +1,9 @@
 import React from 'react';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 
 const Checkout = () => {
   const location = useLocation();
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   const { shippingDetails, cartItems } = location.state || {};
 
   if (!shippingDetails || !cartItems) {
@@ -11,34 +11,6 @@ const Checkout = () => {
   }
 
   const total = cartItems.reduce((acc, item) => acc + item.product.price * item.quantity, 0);
-
-  const handlePaymentSuccess = async (paymentDetails) => {
-    try {
-      const response = await fetch('/api/sendEmail', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          buyerEmail: shippingDetails.email, // Assuming email is part of shippingDetails
-          sellerEmail: 'seller@example.com', // Replace with actual seller's email
-          checkoutDetails: { shippingDetails, cartItems, paymentDetails },
-          paymentStatus: 'Success',
-        }),
-      });
-
-      if (!response.ok) {
-        throw new Error('Failed to send emails');
-      }
-
-      const result = await response.json();
-      console.log('Emails sent successfully:', result);
-      navigate('/order-success');
-    } catch (error) {
-      console.error('Error sending emails:', error);
-      // Handle error
-    }
-  };
 
   const loadRazorpayScript = () => {
     return new Promise((resolve) => {
@@ -68,7 +40,8 @@ const Checkout = () => {
       image: 'https://example.com/your_logo',
       handler: function (response) {
         console.log(response);
-        handlePaymentSuccess(response);
+        // Send email after successful payment
+        sendEmail(shippingDetails, cartItems, total);
       },
       prefill: {
         name: shippingDetails.fullName,
@@ -87,46 +60,67 @@ const Checkout = () => {
     paymentObject.open();
   };
 
+  const sendEmail = async (shippingDetails, cartItems, total) => {
+    const orderDetails = {
+      shippingDetails,
+      cartItems,
+      total,
+    };
+
+    try {
+      const response = await fetch('http://localhost:8000/boonthechef/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          buyerEmail: shippingDetails.email,
+          sellerEmail: 'sathiyakalavirtue@gmail.com',
+          orderDetails,
+        }),
+      });
+
+      if (response.ok) {
+        alert('Email sent successfully');
+      } else {
+        alert('Failed to send email');
+      }
+    } catch (error) {
+      console.error('Error sending email:', error);
+    }
+  };
+
   return (
     <div className="checkout-page" >
-      <div className='container-fluid about' style={{ border: "height:100px !important" }}>
-        <h1>Checkout page</h1>
+      <div className='container-fluid about' style={{border:"height:100px !important"}}>
+         <h1>Checkout page</h1>
       </div>
       <div className='container' style={{ border: "1px solid red" }}>
 
-        <div className="order-summary">
-          <h3>Order Summary</h3>
-          <div className="row">
-            <div className="col-lg-8">
-              {cartItems.map((item) => (
-                <div key={item.product._id} className="cart-item">
-                  <img src={item.product.images[0].image} alt="Product" />
-                  <p>{item.product.name}</p>
-                  <p>Quantity: {item.quantity}</p>
-                  <p>Price: ${item.product.price}</p>
-                </div>
-              ))}
-              <h4>Total: ${total.toFixed(2)}</h4>
-            </div>
-            
-            <div className="col-lg-4">
-            <div className="shipping-details">
-              <h3>Shipping Information</h3>
-              <p>{shippingDetails.fullName}</p>
-              <p>{shippingDetails.address}</p>
-              <p>{shippingDetails.city}, {shippingDetails.state} {shippingDetails.zipCode}</p>
-              <p>{shippingDetails.country}</p>
-              <p>{shippingDetails.phoneNumber}</p>
-            </div>
-              <button className="btn btn-black" onClick={handlePayment}>
-                Proceed to Payment
-              </button>
-            </div>
+     <div className="order-summary">
+        <h3>Order Summary</h3>
+        {cartItems.map((item) => (
+          <div key={item.product._id} className="cart-item">
+            <img src={item.product.images[0].image} alt="Product" />
+            <p>{item.product.name}</p>
+            <p>Quantity: {item.quantity}</p>
+            <p>Price: ${item.product.price}</p>
           </div>
-        </div>
-
-
-
+        ))}
+        <h4>Total: ${total.toFixed(2)}</h4>
+      </div>
+      <div className="shipping-details">
+        <h3>Shipping Information</h3>
+        <p>{shippingDetails.fullName}</p>
+        <p>{shippingDetails.address}</p>
+        <p>{shippingDetails.city}, {shippingDetails.state} {shippingDetails.zipCode}</p>
+        <p>{shippingDetails.country}</p>
+        <p>{shippingDetails.phoneNumber}</p>
+      </div>
+     
+      <button className="btn btn-black" onClick={handlePayment}>
+        Proceed to Payment
+      </button>
 
       </div>
 

@@ -29,7 +29,7 @@ export default function ProductCard({product}){
                 {/* <span id="no_of_reviews">(5 Reviews)</span> */}
               </div>
               
-              <Link to={"/product/"+product._id} id="view_btn" className="btn btn-block">View Details</Link>
+              <Link to={"/product/"+product._id} id="view_btn" className="btn btn-block">Add To Cart</Link>
             </div>
           </div>
         </div>

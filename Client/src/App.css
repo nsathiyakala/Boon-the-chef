@@ -9,9 +9,7 @@ body{
   font-style: normal;
 }
 /* carousel start-------------------- */
-.home-banner-sec .carousel-inner{
-  background-color: #005395;
-}
+
 
 .home-banner-sec .carousel-item{
   position: relative;
@@ -20,17 +18,17 @@ body{
   /* border: 1px solid black; */
   position: absolute;
   bottom: 300px;
-  /* left: 0; */
+  left: 100px;
   width: fit-content;
 }
 .home-banner-sec .carousel-caption h5{
-  font-family: "Londrina Solid", sans-serif;
   font-weight: 500;
   font-style: normal;
   font-size: 70px;
 }
 .home-banner-sec .carousel-caption p{
   font-size: 20px;
+  color: black;
 }
 
 .home-banner-sec .center-caption{
@@ -989,4 +987,105 @@ p{
   .shipping-info button{
     margin-left: 150px;
   }
+}
+
+@media (max-width:1400px){
+  .home-banner-sec .carousel-caption{
+    position: absolute;
+    bottom: 250px;
+  }
+  
+  
+}
+@media (max-width:1300px){
+  .home-banner-sec .carousel-caption{
+    position: absolute;
+    bottom: 200px;
+  }
+}
+@media (max-width:1200px){
+  .home-banner-sec .carousel-caption{
+    position: absolute;
+    bottom: 200px;
+    left: 20px;
+    width: 400px;
+  }
+  .home-banner-sec .carousel-caption h5{
+    font-size: 50px;
+  }
+  .home-banner-sec .carousel-caption p{
+    font-size: 18px;
+  }
+} 
+@media (max-width:1100px){
+  .home-banner-sec .carousel-caption{
+    position: absolute;
+    bottom: 150px;
+  }
+} 
+@media (max-width:800px){
+  .home-banner-sec .carousel-caption{
+    position: absolute;
+    bottom: 100px;
+    left: 0;
+  }
+  .home-banner-sec .carousel-caption h5{
+    font-size: 30px;
+  }
+  .home-banner-sec .carousel-caption p{
+    font-size: 15px;
+  }
+} 
+@media (max-width:700px){
+  .home-banner-sec .carousel-caption{
+    position: absolute;
+    bottom: 80px;
+    left: 0;
+  }
+}
+@media (max-width:600px){
+  .home-banner-sec .carousel-caption{
+    position: absolute;
+    bottom: 70px;
+    left: 0;
+  }
+  .home-banner-sec .carousel-caption p{
+    font-size: 12px;
+  }
+  .home-banner-sec .carousel-caption h5{
+    font-size: 25px;
+  }
+  .carousel-indicators button{
+    width: 10px !important;
+  }
+}
+
+@media (max-width:500px){
+  .home-banner-sec .carousel-caption{
+    position: absolute;
+    bottom: 50px;
+    left: 20px;
+    width: 200px;
+  }
+  .home-banner-sec .carousel-caption p{
+    font-size: 12px;
+  }
+  .home-banner-sec .carousel-caption h5{
+    font-size: 25px;
+  }
+}
+
+@media (max-width:400px){
+  .home-banner-sec .carousel-caption{
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+  }
+  .home-banner-sec .carousel-caption p{
+    font-size: 12px;
+  }
+  .home-banner-sec .carousel-caption h5{
+    font-size: 25px;
+  }
+  
 }

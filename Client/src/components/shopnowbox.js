@@ -23,8 +23,8 @@ export default function ShopnowBox() {
                             <h3>OPENING SALE - 10% OFF ON ALL PRODUCTS</h3>
                         </div>
                         <div className="col-lg-3 d-flex justify-content-center align-items-center">
-                            <button className="btn btn-light">
-                                Shop Now &nbsp; <i className="fa-solid fa-cart-shopping"></i>
+                        <button className="btn btn-light">
+                            <Link to={"/products"} className='no-underline'>Shop Now &nbsp; <i className="fa-solid fa-cart-shopping"></i></Link> 
                             </button>
                         </div>
                     </div>

@@ -1,4 +1,4 @@
-import { useLocation, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Fragment, useState, useEffect } from "react";
 
 export default function ComboCart({ cartItems, setCartItems }) {
@@ -107,7 +107,7 @@ export default function ComboCart({ cartItems, setCartItems }) {
                                 <hr />
                                 <div className="checkout-buttons">
                                     <button onClick={backsubmit} className="btn btn-secondary">Back</button>
-                                    <button id="checkout_btn" className="btn btn-primary btn-block">Place Order</button>
+                                    <Link to={"/shippinginfo"}> <button className="btn btn-black btn-block">Place Order</button> </Link>
                                 </div>
                             </div>
                         </div>

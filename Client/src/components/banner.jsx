@@ -54,16 +54,16 @@ export default function HomeBanner() {
                 <div className="carousel-item" style={{backgroundColor:"#005395"}}>
                     <img src="/images/millets-banner.jpg" className="d-block w-100" alt="..." />
                     <div class="carousel-caption">
-                        {/* <p className=''> Nourishing Hearts, One Good Deed at a Time!</p> */}
+                        
                         <h5 className='text-dark'>MILLETS</h5>
-
+                        <p className=''> A nutritious blend for making delicious and healthy dosa with the goodness of millets.</p>
                     </div>
                 </div>
                 <div className="carousel-item">
                     <img src="/images/spice.jpg" className="d-block w-100" alt="..." />
                     <div class="carousel-caption">
-                        {/* <p className=''>Tending to the Garden of Goodness with Care and Commitment</p> */}
                         <h5 className='text-dark'>SPICES</h5>
+                        <p className=''>A versatile and aromatic blend of spices to enhance the flavor of any dish.</p>
 
                     </div>
                 </div>
@@ -84,7 +84,8 @@ export default function HomeBanner() {
                 <span className="carousel-control-next-icon" aria-hidden="true"></span>
                 <span className="visually-hidden">Next</span>
             </button> */}
-        </div></section>
+        </div>
+      </section>
               
 
 

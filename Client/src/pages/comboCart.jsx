@@ -1,4 +1,4 @@
-import { useLocation, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Fragment, useState, useEffect } from "react";
 
 export default function ComboCart({ cartItems, setCartItems }) {
@@ -6,7 +6,6 @@ export default function ComboCart({ cartItems, setCartItems }) {
     const navigate = useNavigate();
     const { selectedProduct } = location.state || { selectedProduct: [] };
 
-    // Initialize the selected products with quantity set to 1 if not set
     const [updatedProducts, setUpdatedProducts] = useState([]);
 
     useEffect(() => {
@@ -61,7 +60,6 @@ export default function ComboCart({ cartItems, setCartItems }) {
                                                 <div className="col-7 col-lg-5">
                                                     <label style={{ fontSize: "18px" }}>{product.name}</label>
                                                     <div className="ratings mt-auto" style={{ fontSize: "10px" }}>
-                                                        {/* Rating icons */}
                                                         <i className="fa fa-star"></i>
                                                         <i className="fa fa-star"></i>
                                                         <i className="fa fa-star"></i>
@@ -72,7 +70,6 @@ export default function ComboCart({ cartItems, setCartItems }) {
                                                         <p id="card_item_price" className="mt-3" style={{ fontSize: "20px" }}>${product.price}</p>
                                                     </div>
                                                 </div>
-
                                                 <div className="col-4 col-lg-1 mt-4 mt-lg-0 order-4 order-lg-2">
                                                     <div className="stockCounter d-inline">
                                                         <input
@@ -106,8 +103,10 @@ export default function ComboCart({ cartItems, setCartItems }) {
                                 <p>Est. total: <span className="order-summary-values">${price.toFixed(2)}</span></p>
                                 <hr />
                                 <div className="checkout-buttons">
-                                    <button onClick={backsubmit} className="btn btn-secondary">Back</button>
-                                    <button id="checkout_btn" className="btn btn-primary btn-block">Place Order</button>
+                                    <button onClick={backsubmit} className="btn btn-black btn-block mb-3">Back</button>
+                                    <Link to={"/comboShippinginfo"} state={{ selectedProduct: updatedProducts }}>
+                                      <button className="btn btn-black btn-block">Place Order</button>
+                                    </Link>
                                 </div>
                             </div>
                         </div>

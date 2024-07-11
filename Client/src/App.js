@@ -17,6 +17,8 @@ import ComboCart from "./pages/comboCart"
 import ScrollToTop from './components/Scrooltotop';
 import ShippingInfo from './pages/ShipppingInfo';
 import Checkout from './pages/checkout';
+import ComboShippingInfo from './pages/comboShippingInfo';
+import ComboCheckout from './pages/comboCheckout';
 
 // import Search from './components/search';
  
@@ -47,6 +49,9 @@ function App() {
           <Route path='/combocart' element={<ComboCart/>}/>
           <Route path="/shippinginfo" element={<ShippingInfo cartItems={cartItems}/>}/>
           <Route path='/checkout' element={<Checkout/>}/>
+          <Route path='/comboShippinginfo' element={<ComboShippingInfo cartItems={cartItems}/>}/>
+          <Route path='/comboCheckout' element={<ComboCheckout/>}/>
+
           
           
           

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 
-const ShippingInfo = ({ cartItems }) => {
+const ComboShippingInfo = () => {
   const [shippingDetails, setShippingDetails] = useState({
     fullName: '',
     address: '',
@@ -10,10 +10,12 @@ const ShippingInfo = ({ cartItems }) => {
     zipCode: '',
     country: '',
     phoneNumber: '',
-    email:''
+    email: ''
   });
 
   const navigate = useNavigate();
+  const location = useLocation();
+  const { selectedProduct } = location.state || {};
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -25,7 +27,7 @@ const ShippingInfo = ({ cartItems }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    navigate('/checkout', { state: { shippingDetails, cartItems } }) ;
+    navigate('/comboCheckout', { state: { shippingDetails, selectedProduct } });
   };
 
   return (
@@ -37,7 +39,6 @@ const ShippingInfo = ({ cartItems }) => {
             <div className="col-lg-10">
               <div className="row">
                 <div className="col-12 col-lg-6">
-
                   <label>Full Name:</label>
                   <input
                     type="text"
@@ -46,9 +47,7 @@ const ShippingInfo = ({ cartItems }) => {
                     onChange={handleChange}
                     required
                   />
-
                 </div>
-
                 <div className="col-12 col-lg-6">
                   <label>Phone Number:</label>
                   <input
@@ -60,7 +59,6 @@ const ShippingInfo = ({ cartItems }) => {
                   />
                 </div>
                 <div className="col-12 col-lg-6">
-
                   <label>Address:</label>
                   <input
                     type="text"
@@ -69,11 +67,8 @@ const ShippingInfo = ({ cartItems }) => {
                     onChange={handleChange}
                     required
                   />
-
                 </div>
-
                 <div className="col-12 col-lg-6">
-
                   <label>Email:</label>
                   <input
                     type="text"
@@ -82,9 +77,7 @@ const ShippingInfo = ({ cartItems }) => {
                     onChange={handleChange}
                     required
                   />
-
                 </div>
-
                 <div className="col-12 col-lg-6">
                   <label>City:</label>
                   <input
@@ -95,8 +88,7 @@ const ShippingInfo = ({ cartItems }) => {
                     required
                   />
                 </div>
-
-                <div className="col-12 col-lg-6" >
+                <div className="col-12 col-lg-6">
                   <label>State:</label>
                   <input
                     type="text"
@@ -126,16 +118,16 @@ const ShippingInfo = ({ cartItems }) => {
                     required
                   />
                 </div>
-                <div> <button type="submit"> Check Out</button></div>
-               
+                <div>
+                  <button type="submit">Check Out</button>
+                </div>
               </div>
             </div>
           </div>
         </form>
       </div>
     </div>
-
   );
 };
 
-export default ShippingInfo;
+export default ComboShippingInfo;

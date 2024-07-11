@@ -46,6 +46,8 @@ export default function Products() {
                                     <button className={category === 'Millets'? 'active' :''} id='active1' type='button' onClick={() => setCategory('Millets')}>Millet</button>|
                                     <button type='button' className={category === 'Spice'? 'active' :''} onClick={() => setCategory('Spice')}>Spice</button>|
                                     <button type='button' className={category === 'Herbs'? 'active' :''} onClick={HerbsCategory}>Herb</button>   
+                                    <button type='button' className={category === 'Healthmix'? 'active' :''} onClick={() => setCategory('Healthmix')}>Healthmix</button>   
+                                    <button type='button' className={category === 'Boiledrice'? 'active' :''} onClick={() => setCategory('Boiledrice')}>Boiledrice</button>   
 
                                 </h3>
                             </div>

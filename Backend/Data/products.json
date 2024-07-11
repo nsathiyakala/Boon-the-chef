@@ -1,47 +1,280 @@
- [
+[{
+  "_id": {
+    "$oid": "6684f7c3b082dbd637e1ca5d"
+  },
+  "name": "Samai Dosai Mix(Little Millet)",
+  "price": 165,
+  "description": "Samai Dosa Mix is Prepared with the blending of Samai which is rich in niacin and magnesium with rice, rava and jowar. Ajwain, Asafoetida and Cumin are added to Enhance the Flavour and helps in easy Digestion",
+  "images": [
     {
-        "name": "Adai Dosai Mix",
-        "price": 200.00,
-        "description": "Get a protein boost with our Adai Dosai Mix. Made with a unique blend of four lentils (Kadalai Paruppu, Thuvaram Paruppu, Ulunthu and Paasi Paruppu), our mix is a nutritious and delicious Protein rich option for your meals. We prioritize protein to give you the best possible dosai experience.Share",
-        "images": [
-            {
-                "image": "/images/adai.jpg"
-            }
-        ],
-        "category": "Millets"
-    },
-    {
-        "name": "Cholam Dosai Mix(Jowar)",
-        "price": 135.00,
-        "description": "Cholam Dosai Mix is Prepared with the blending of Jowar which has a low glycemic index with rice and rava. Ajwain, Asafoetida and Cumin are added to Enhance the Flavour and helps in easy Digestion.",
-        "images": [
-            {
-                "image": "/images/cholam.jpg"
-            }
-        ],
-        "category": "Millets"
-    },
-    {
-        "name": "Kambu Dosai Mix(Pearl Millet)",
-        "price":  135.00,
-        "description": "Kambu Dosai Mix is Prepared with the blending of Kambu which has high Iron content accompanied with rice, rava and jowar. Ajwain, Asafoetida and Cumin are added to Enhance the Flavour and helps in easy Digestion.",
-        "images": [
-            {
-                "image": "/images/kambu.webp"
-            }
-        ],
-        "category": "Millets"
-    },
-    {
-        "name": "Health Mix",
-        "price": 200.00,
-        "description": "Health Mix is the perfect blend of 19 millets and pulses, providing a homemade, nutritional start to your day. Packed with essential nutrients and minerals, this mix ensures a healthy and balanced diet. Give yourself the best start possible with BOON the CHEF Health Mix.",
-        "images": [
-            {
-                "image": "/images/mixed3.jpg"
-            }
-        ],
-        "category": "Millets"
+      "image": "/images/saamai1.jfif"
     }
-]
-
+  ],
+  "category": "Millets"
+},
+{
+  "_id": {
+    "$oid": "6684f7c3b082dbd637e1ca5e"
+  },
+  "name": "Rava Dosai Mix",
+  "price": 135,
+  "description": "As a fibre-rich mix made with whole wheat, Rava Dosai Mix is a nourishing and healthy choice for making traditional South Indian dosais. Savour the delicious taste of dosas while enjoying the benefits of a high-fiber diet. An expertly crafted blend ensures a nutritious and wholesome meal.",
+  "images": [
+    {
+      "image": "/images/rava1.jfif"
+    }
+  ],
+  "category": "Millets"
+},
+{
+  "_id": {
+    "$oid": "6684f7c3b082dbd637e1ca5f"
+  },
+  "name": "Cholam Dosai Mix(Jowar)",
+  "price": 135,
+  "description": "Cholam Dosai Mix is Prepared with the blending of Jowar which has a low glycemic index with rice and rava. Ajwain, Asafoetida and Cumin are added to Enhance the Flavour and helps in easy Digestion.",
+  "images": [
+    {
+      "image": "/images/cholam.jpg"
+    }
+  ],
+  "category": "Millets"
+},
+{
+  "_id": {
+    "$oid": "6684f7c3b082dbd637e1ca60"
+  },
+  "name": "Vathal kulambu powder",
+  "price": 165,
+  "description": "A flavorful blend of roasted fenugreek, coriander, cumin, and spices, perfect for creating tangy ",
+  "images": [
+    {
+      "image": "/images/vathalkulambu.jpg"
+    }
+  ],
+  "category": "Spice"
+},
+{
+  "_id": {
+    "$oid": "6684f7c3b082dbd637e1ca61"
+  },
+  "name": "Health Mix",
+  "price": 200,
+  "description": "Health Mix is the perfect blend of 19 millets and pulses, providing a homemade, nutritional start to your day. Packed with essential nutrients and minerals, this mix ensures a healthy and balanced diet. Give yourself the best start possible with BOON the CHEF Health Mix.",
+  "images": [
+    {
+      "image": "/images/Healthmix1.jfif"
+    }
+  ],
+  "category": "Millets"
+},
+{
+  "_id": {
+    "$oid": "6684f7c3b082dbd637e1ca62"
+  },
+  "name": "Fish kulambu powder",
+  "price": 1,
+  "description": "A blend of aromatic spices like cumin, coriander, fenugreek, and others, crafted to elevate the flavor of curries",
+  "images": [
+    {
+      "image": "/images/fishkulambu.jpg"
+    }
+  ],
+  "category": "Spice"
+},
+{
+  "_id": {
+    "$oid": "6684f7c3b082dbd637e1ca63"
+  },
+  "name": "Beat the Heat Combo (Kambu(Pearl Millet), Thinai(Foxtail Millet), Solam(Sorghum)) Dosa Mixes",
+  "price": 430,
+  "description": "Introducing the Beat the Heat Combo - expertly curated to keep your body cool during scorching summer days. Experience the benefits of staying cool with this powerful combination of products. Don't let the heat get to you - stay cool with Beat the Heat.",
+  "images": [
+    {
+      "image": "/images/kamthinchol.webp"
+    }
+  ],
+  "category": "Millets"
+},
+{
+  "_id": {
+    "$oid": "6684f7c3b082dbd637e1ca64"
+  },
+  "name": "Fish fry powder",
+  "price": 165,
+  "description": " A seasoning blend crafted specifically for coating fish before frying, imparting a crispy texture and savory flavor.",
+  "images": [
+    {
+      "image": "/images/fishfry.jpg"
+    }
+  ],
+  "category": "Spice"
+},
+{
+  "_id": {
+    "$oid": "6684f7c3b082dbd637e1ca65"
+  },
+  "name": "Paruppu kulambu powder",
+  "price": 165,
+  "description": "A traditional South Indian spice blend made from roasted lentils and a mix of aromatic spices. ",
+  "images": [
+    {
+      "image": "/images/paruppukulambu.jpg"
+    }
+  ],
+  "category": "Spice"
+},
+{
+  "_id": {
+    "$oid": "6684f7c3b082dbd637e1ca66"
+  },
+  "name": "Chicken masala powder",
+  "price": 165,
+  "description": "A flavorful spice mix perfect for enhancing chicken dishes with its aromatic blend of spices.",
+  "images": [
+    {
+      "image": "/images/chickenmasala.jpg"
+    }
+  ],
+  "category": "Spice"
+},
+{
+  "_id": {
+    "$oid": "6684f7c3b082dbd637e1ca67"
+  },
+  "name": "Chicken kulambu powder",
+  "price": 165,
+  "description": "Chicken kulambu powder: A spicy South Indian seasoning mix crafted with roasted and ground spices, ideal for flavoring chicken dishes.",
+  "images": [
+    {
+      "image": "/images/chickenkulambu.jpg"
+    }
+  ],
+  "category": "Spice"
+},
+{
+  "_id": {
+    "$oid": "6684f7c3b082dbd637e1ca68"
+  },
+  "name": "Keazhvaragu Dosai Mix (Finger Millet)",
+  "price": 135,
+  "description": "Keazhvaragu Dosai Mix is Prepared with the careful blending of Keazhvaragu which has a high protein content accompanied by rice, rava and jowar. we add Ajwain, Asafoetida and Cumin to Enhance the Flavour and helps in easy Digestion.",
+  "images": [
+    {
+      "image": "/images/kelvaragu.jpg"
+    }
+  ],
+  "category": "Millets"
+},
+{
+  "_id": {
+    "$oid": "6684f7c3b082dbd637e1ca69"
+  },
+  "name": "Kuthiraivali Dosai Mix(Barnyard Millet)",
+  "price": 165,
+  "description": "Kuthiraivali Dosai Mix is Prepared with the appropriate portion of blending of Kuthiraivali which is high in Iron and Fiber with rice, rava and jowar. Ajwain, Asafoetida and Cumin are added to Enhance the Flavour and helps in easy Digestion.",
+  "images": [
+    {
+      "image": "/images/kuthiraivali1.jpg"
+    }
+  ],
+  "category": "Millets"
+},
+{
+  "_id": {
+    "$oid": "6684f7c3b082dbd637e1ca6a"
+  },
+  "name": "Paruppu Powder",
+  "price": 165,
+  "description": "A nutritious lentil-based spice mix, perfect for enhancing the flavor of your dishes.",
+  "images": [
+    {
+      "image": "/images/paruppu.jpg"
+    }
+  ],
+  "category": "Spice"
+},
+{
+  "_id": {
+    "$oid": "6684f7c3b082dbd637e1ca6b"
+  },
+  "name": "Puli Soru Power",
+  "price": 165,
+  "description": "Tangy and flavorful spice blend perfect for making traditional tamarind rice",
+  "images": [
+    {
+      "image": "/images/pulisoru.jpg"
+    }
+  ],
+  "category": "Spice"
+},
+{
+  "_id": {
+    "$oid": "6684f7c3b082dbd637e1ca6c"
+  },
+  "name": "Kambu Dosai Mix(Pearl Millet)",
+  "price": 135,
+  "description": "Kambu Dosai Mix is Prepared with the blending of Kambu which has high Iron content accompanied with rice, rava and jowar. Ajwain, Asafoetida and Cumin are added to Enhance the Flavour and helps in easy Digestion.",
+  "images": [
+    {
+      "image": "/images/kambu.webp"
+    }
+  ],
+  "category": "Millets"
+},
+{
+  "_id": {
+    "$oid": "6684f7c3b082dbd637e1ca6d"
+  },
+  "name": "Thinai Dosai Mix(FoxTail Millet)",
+  "price": 165,
+  "description": "Thinai Dosai Mix is Prepared with the blending of Thinai which has a high fiber with rice, rava and jowar. Ajwain, Asafoetida and Cumin are added to Enhance the Flavour and help in easy Digestion.",
+  "images": [
+    {
+      "image": "/images/thinai1.jfif"
+    }
+  ],
+  "category": "Millets"
+},
+{
+  "_id": {
+    "$oid": "6684f7c3b082dbd637e1ca6e"
+  },
+  "name": "Varagu Dosai Mix(Kodo Millet)",
+  "price": 165,
+  "description": "Varagu Dosai Mix is Prepared with a blending of Varagu with a high lecithin content in proportion with rice, Rava and jowar. Ajwain, Asafoetida and Cumin are added to Enhance the Flavour and helps in easy Digestion",
+  "images": [
+    {
+      "image": "/images/varaku.jpg"
+    }
+  ],
+  "category": "Millets"
+},
+{
+  "_id": {
+    "$oid": "6684f7c3b082dbd637e1ca6f"
+  },
+  "name": "Idly Milagai Powder",
+  "price": 165,
+  "description": "A spicy and aromatic South Indian condiment perfect for enhancing the flavor of idlis and dosas.",
+  "images": [
+    {
+      "image": "/images/idlymilagai.jpg"
+    }
+  ],
+  "category": "Spice"
+},
+{
+  "_id": {
+    "$oid": "6684f7c3b082dbd637e1ca70"
+  },
+  "name": "Pepper chicken fry powder",
+  "price": 165,
+  "description": "A spicy blend of black pepper, cumin, coriander, and aromatic spices for flavorful chicken fry dishes.",
+  "images": [
+    {
+      "image": "/images/pepperchicken.jpg"
+    }
+  ],
+  "category": "Spice"
+}]

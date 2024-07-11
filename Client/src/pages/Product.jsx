@@ -51,7 +51,7 @@ export default function Products() {
                             </div>
                         </div>
                         <div className='container'>
-                            <div className='row'>
+                            <div className='row' >
                                 {category === "Herbs" && <h2 className='text-center'>{message}</h2>}
                                 {products && products.map(product => <ProductCard key={product._id} product={product} />)}
                             </div>
@@ -59,9 +59,7 @@ export default function Products() {
                     </div>
                 </div>
             </div>
-            {/* <div className='all-products-sec'>
-                <h2></h2>
-            </div> */}
+           
         </Fragment>
     );
 }

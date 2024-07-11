@@ -1,9 +1,6 @@
-import { Fragment } from 'react';
-import Footer from '../components/footerpage';
-
 export default function About() {
     return (
-        <Fragment>
+        <div className="about-page">
 
             <div className='container-fluid about'>
                 <h1>About Us</h1>
@@ -72,7 +69,7 @@ export default function About() {
             </div>
             <section>
                 <div className='ourstory container'>
-                    <h3 className='text-center'>Our Story</h3>
+                    <h3 className='text-center mb-5 mt-5' style={{fontSize:""}}>Our Story</h3>
                     <div className="row">
                         <div className="col-lg-6 mt-3" >
                             <p>  <b>Boon the Chef</b>  has its roots spanning for over four generations. Back in the early 1900s, our great grandmother’s recipes were loved by everyone. They were traditionally prepared by hand with love and care. Times have changed, but the recipes she left us behind with still stand true to the spirit of their nativity. When we had to travel to the West, my mother packed these recipes in small packets so that we can have a fulfilling meal whenever we felt like it. The recipes were so close to our hearts that they brought back the memories of our childhood whenever we had them.
@@ -141,6 +138,6 @@ export default function About() {
             </div>
 
 
-        </Fragment>
+        </div>
     );
 }

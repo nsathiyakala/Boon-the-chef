@@ -145,7 +145,7 @@ function Home({cartItems}) {
       </section>
       <div className='container-fluid mt-4 mb-4'>
         <b>
-          <h3 className='bg-white text-dark text-center'>Empowering Delicious Choices, You are the Master Chef, Craft your combo, Your way.</h3>
+          <h3 className='bg-white text-dark text-center combo-description'>Empowering Delicious Choices, You are the Master Chef, Craft your combo, Your way.</h3>
         </b>
       </div>
 

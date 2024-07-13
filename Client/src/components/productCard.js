@@ -15,7 +15,7 @@ export default function ProductCard({product}){
               <h5 className="card-title">
               <Link to={"/product"+product._id}>{product.name} </Link> 
               </h5>
-              <p className="card-text">₹{product.price}</p>
+              <p className="card-text card-price">₹{product.price}</p>
               <p className="card-text">Category:{product.category}</p>
 
               <div className="ratings mt-auto">
@@ -29,7 +29,11 @@ export default function ProductCard({product}){
                 {/* <span id="no_of_reviews">(5 Reviews)</span> */}
               </div>
               
-              <Link to={"/product/"+product._id} id="view_btn" className="btn btn-block">Add To Cart</Link>
+              <Link to={"/product/"+product._id}>
+              <button
+               id="view_btn" className="btn btn-block">Add To Cart
+               </button>
+               </Link>
             </div>
           </div>
         </div>

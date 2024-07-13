@@ -145,7 +145,7 @@ function Home({cartItems}) {
       </section>
       <div className='container-fluid mt-4 mb-4'>
         <b>
-          <h3 className='bg-white text-dark text-center'>Empowering Delicious Choices, You are the Master Chef, Craft your combo, Your way.</h3>
+          <h3 className='bg-white text-dark text-center combo-description'>Empowering Delicious Choices, You are the Master Chef, Craft your combo, Your way.</h3>
         </b>
       </div>
 
@@ -200,7 +200,7 @@ function Home({cartItems}) {
       </section> */}
       <section>
         <div className='container-fluid meal-section'>
-          <img src="./images/web-23.jpg" alt="" />
+          <img src="./images/web-31.jpg" alt="" />
           </div>
       </section>
       

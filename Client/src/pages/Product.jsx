@@ -43,17 +43,18 @@ export default function Products() {
                         <div className='d-flex justify-content-center'>
                             <div className='d-flex justify-content-center'>
                                 <h3 className='mb-5 slogan-1'>
-                                    <button className={category === 'Millets'? 'active' :''} id='active1' type='button' onClick={() => setCategory('Millets')}>Millet</button>|
-                                    <button type='button' className={category === 'Spice'? 'active' :''} onClick={() => setCategory('Spice')}>Spice</button>|
-                                    <button type='button' className={category === 'Herbs'? 'active' :''} onClick={HerbsCategory}>Herb</button>   
-                                    <button type='button' className={category === 'Healthmix'? 'active' :''} onClick={() => setCategory('Healthmix')}>Healthmix</button>   
-                                    <button type='button' className={category === 'Boiledrice'? 'active' :''} onClick={() => setCategory('Boiledrice')}>Boiledrice</button>   
+                                    <button className={category === 'Millets'? 'active' :''} id='active1' type='button' onClick={() => setCategory('Millets')}>Millet</button> |&nbsp;
+                                    <button type='button' className={category === 'Spice'? 'active' :''} onClick={() => setCategory('Spice')}>Spice</button> |&nbsp; 
+                                    
+                                    <button type='button' className={category === 'Healthmix'? 'active' :''} onClick={() => setCategory('Healthmix')}>Health Mix</button> |&nbsp;
+                                    <button type='button' className={category === 'Boiledrice'? 'active' :''} onClick={() => setCategory('Boiledrice')}>Boiled Rice</button> |&nbsp; 
+                                    <button type='button' className={category === 'Herbs'? 'active' :''} onClick={HerbsCategory}>Herb</button>    
 
                                 </h3>
                             </div>
                         </div>
                         <div className='container'>
-                            <div className='row'>
+                            <div className='row' >
                                 {category === "Herbs" && <h2 className='text-center'>{message}</h2>}
                                 {products && products.map(product => <ProductCard key={product._id} product={product} />)}
                             </div>
@@ -61,9 +62,7 @@ export default function Products() {
                     </div>
                 </div>
             </div>
-            {/* <div className='all-products-sec'>
-                <h2></h2>
-            </div> */}
+           
         </Fragment>
     );
 }

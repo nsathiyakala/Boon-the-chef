@@ -89,7 +89,7 @@ export default function About() {
                         </div>
                         <div className="col-lg-6" >
                             <div style={{height:"500px"}}>
-                            <img className='img-fluid' src='/images/story.png' alt='' style={{width:"100%",height:"100%", objectFit:"contain"}}/>
+                            <img className='img-fluid mt-3' src='/images/ourstory.jpeg' alt='' style={{width:"100%",height:"100%", objectFit:"contain"}}/>
                             </div>
                             
                         </div>

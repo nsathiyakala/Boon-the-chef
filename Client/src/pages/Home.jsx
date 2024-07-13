@@ -198,6 +198,11 @@ function Home({cartItems}) {
       {/* <section className='container-fluid shop-now p-4'>
         <ShopNow />
       </section> */}
+      <section>
+        <div className='container-fluid meal-section'>
+          <img src="./images/web-23.jpg" alt="" />
+          </div>
+      </section>
       
       <section className='container-fluid testimonal p-5'>
         <h3 className='tesimonals-text text-center'>Testimonial</h3>

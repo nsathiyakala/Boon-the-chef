@@ -33,47 +33,41 @@ export default function HomeBanner() {
 
 
 
-      <section className='home-banner-sec'>
+<section className='home-banner-sec'>
         <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
 
             </div>
             <div className="carousel-inner" >
                 <div className="carousel-item active">
                     <img src="/images/homecarousel.jpg" className="d-block w-100" alt="..." />
-                    <div class="carousel-caption ">
-                        {/* <p className=''>Invest In A Living Formula. Own a Franchise</p> */}
-                        {/* <h5>Franchise With Us</h5> */}
-
-                    </div>
+                    
                 </div>
                 <div className="carousel-item" style={{backgroundColor:"#005395"}}>
-                    <img src="/images/millets-banner.jpg" className="d-block w-100" alt="..." />
-                    <div class="carousel-caption">
-                        
-                        <h5 className='text-dark'>MILLETS</h5>
-                        <p className=''> A nutritious blend for making delicious and healthy dosa with the goodness of millets.</p>
-                    </div>
+                    <img src="/images/millets banner.jpeg" className="d-block w-100" alt="..." />
+      
                 </div>
                 <div className="carousel-item">
-                    <img src="/images/spice.jpg" className="d-block w-100" alt="..." />
-                    <div class="carousel-caption">
-                        <h5 className='text-dark'>SPICES</h5>
-                        <p className=''>A versatile and aromatic blend of spices to enhance the flavor of any dish.</p>
-
-                    </div>
+                    <img src="/images/spice banner.jpeg" className=" w-100" alt="..." />
+                   
+                </div>
+                <div className="carousel-item">
+                    <img src="/images/boiledrice banner.jpeg" className=" w-100" alt="..." />
+                   
+                </div>
+                <div className="carousel-item">
+                    <img src="/images/healthmix banner.jpeg" className=" w-100" alt="..." />
+                   
                 </div>
                 <div className="carousel-item">
                     <img src="/images/herbs.jpg" className="d-block w-100" alt="..." />
-                    <div class="carousel-caption center-caption">
-                        {/* <p className=''>Tending to the Garden of Goodness with Care and Commitment</p> */}
-                        {/* <h5>HERBS</h5> */}
-
-                    </div>
+                  
                 </div>
             </div>
             {/* <button className="carousel-control-prev" type="button" data-bs-target="#Homecarousel" data-bs-slide="prev">

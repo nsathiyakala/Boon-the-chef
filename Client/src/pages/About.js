@@ -1,3 +1,4 @@
+
 export default function About() {
     return (
         <div className="about-page">
@@ -23,7 +24,7 @@ export default function About() {
                     </div>
 
                     <div className='col-lg-6 p-5'>
-                        <img className='img-fluid' src='./images/mixed1.jpg' alt='Mixed' />
+                        <img className='img-fluid' src='./images/web-23.jpg' alt='Mixed' />
                     </div>
                 </div>
             </div>
@@ -69,7 +70,7 @@ export default function About() {
             </div>
             <section>
                 <div className='ourstory container'>
-                    <h3 className='text-center mb-5 mt-5' style={{fontSize:""}}>Our Story</h3>
+                    <h3 className='text-center mb-5 mt-5'>Our Story</h3>
                     <div className="row">
                         <div className="col-lg-6 mt-3" >
                             <p>  <b>Boon the Chef</b>  has its roots spanning for over four generations. Back in the early 1900s, our great grandmother’s recipes were loved by everyone. They were traditionally prepared by hand with love and care. Times have changed, but the recipes she left us behind with still stand true to the spirit of their nativity. When we had to travel to the West, my mother packed these recipes in small packets so that we can have a fulfilling meal whenever we felt like it. The recipes were so close to our hearts that they brought back the memories of our childhood whenever we had them.
@@ -86,7 +87,7 @@ export default function About() {
                         </div>
                         <div className="col-lg-6" >
                             <div style={{height:"500px"}}>
-                            <img className='img-fluid' src='/images/story.png' alt='' style={{width:"100%",height:"100%", objectFit:"contain"}}/>
+                            <img className='img-fluid mt-3' src='/images/ourstory.jpeg' alt='' style={{width:"100%",height:"100%", objectFit:"contain"}}/>
                             </div>
                             
                         </div>

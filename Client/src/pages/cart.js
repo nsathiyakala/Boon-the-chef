@@ -94,7 +94,7 @@ export default function Cart({ cartItems, setCartItems }) {
                 <p>Subtotal: <span className="order-summary-values">{subtotal} (Units)</span></p>
                 <p>Est. total: <span className="order-summary-values">${total.toFixed(2)}</span></p>
                 <hr />
-                <Link to={"/shippinginfo"}> <button className="btn btn-black btn-block">Place Order</button> </Link>
+                <Link to={"/shippinginfo"} style={{"text-decoration":"none"}}> <button className="btn btn-black btn-block">Place Order</button> </Link>
 
               </div>
             </div>

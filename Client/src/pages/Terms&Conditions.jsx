@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const TermsConditions = () => {
     return (
@@ -78,7 +79,7 @@ const TermsConditions = () => {
                                 <h6 className='italic'>SECTION 5 - <b> PRODUCTS OR SERVICES (if applicable)</b></h6>
 
                                 <p className='mt-3'>
-                                    Certain products or Services may be available exclusively online through the website. These products or Services may have limited quantities and are subject to return or exchange only according to our Refund Policy: [LINK TO REFUND POLICY]
+                                    Certain products or Services may be available exclusively online through the website. These products or Services may have limited quantities and are subject to return or exchange only according to our Refund Policy: <Link to='/refundpolicy' style={{textDecoration:"none"}}>LINK TO REFUND POLICY</Link>
                                 </p>
 
                                 <p className='mt-3'>
@@ -110,7 +111,7 @@ const TermsConditions = () => {
                                 </p>
 
                                 <p className='mt-3'>
-                                    For more details, please review our Refund Policy: [LINK TO REFUND POLICY]
+                                    For more details, please review our Refund Policy: <Link to='/refundpolicy' style={{textDecoration:"none"}}>LINK TO REFUND POLICY</Link>
                                 </p>
 
                                 <hr className='mt-5 mb-5' />
@@ -295,12 +296,14 @@ const TermsConditions = () => {
                                 <p className='mt-3'>
                                     Our contact information is posted below:
                                 </p>
-                                <p>[INSERT TRADING NAME] <br />
+                                <p>Boon The Chef <br />
                                     aazhisamaiyalarai@gmail.com <br />
-                                    [INSERT BUSINESS ADDRESS] <br />
-                                    [INSERT BUSINESS PHONE NUMBER] <br />
-                                    [INSERT BUSINESS REGISTRATION NUMBER] <br />
-                                    [INSERT VAT NUMBER]
+                                    127,poonga Nagar
+                                    GK Square,Kallu kuzhi saalai
+                                    Kurichi, Coimbatore, 641024 TN, India <br />
+                                    91+962-996-5844 <br />
+                                    {/* [INSERT BUSINESS REGISTRATION NUMBER] <br />
+                                    [INSERT VAT NUMBER] */}
                                 </p>
 
                             </div>

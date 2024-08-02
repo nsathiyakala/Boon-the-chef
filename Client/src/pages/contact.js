@@ -40,7 +40,11 @@ export default function Contact() {
                                 <div className="card contact-card">
                                     <div className="card-text text-center">
                                         <i className="fa-solid fa-phone contact-icon"></i>
-                                        <h5>91 + 962-996-5844</h5>
+                                        <a href="tel:91+962-996-5844" style={{"text-decoration":"none", color:"black"}}>
+                                        <h5>91+962-996-5844</h5>
+                                        </a>
+                
+                                       
                                     </div>
                                 </div>
                             </div>
@@ -48,7 +52,7 @@ export default function Contact() {
                                 <div className="card contact-card">
                                     <div className="card-text text-center">
                                         <i className="fa-solid fa-location-crosshairs contact-icon"></i>
-                                        <h5>XYZ Corporation 1234 Elm Street Suite 567</h5>
+                                        <h5>127,poonga Nagar, GK Square, , Kallu kuzhi saalai, Kurichi, Coimbatore, 641024 TN, India</h5>
                                     </div>
                                 </div>
                             </div>
@@ -56,7 +60,9 @@ export default function Contact() {
                                 <div className="card contact-card">
                                     <div className="card-text text-center">
                                         <i className="fa-solid fa-envelope contact-icon"></i>
+                                        <a href="mailto:aazhisamaiyalarai@gmail.com" style={{"text-decoration":"none", color:"black"}}>
                                         <h5>aazhisamaiyalarai@gmail.com</h5>
+                                        </a>
                                     </div>
                                 </div>
                             </div>

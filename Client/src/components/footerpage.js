@@ -14,7 +14,7 @@ export default function Footer() {
                                 </div>
                                 <h1>Boon The Chef</h1>
                                 <p>
-                                AR Foods, spanning four generations, preserves cherished recipes from our great grandmother, delivering traditional flavors and nostalgia worldwide.
+                                Boon the Chef, spanning four generations, preserves cherished recipes from our great grandmother, delivering traditional flavors and nostalgia worldwide.
                                 </p>
                             </div>
                         </div>
@@ -63,32 +63,25 @@ export default function Footer() {
                         </div>
 
                         <div className='col-12 col-md-3 footer-content-col' >
-                            <div className='footer-content pt-5'>
-                                <h3>Address</h3>
+                            <div className='footer-content '>
+                                <h3>Contact</h3>
                                 <p>
-                                    XYZ Corporation
-                                    1234 Elm Street
-                                    Suite 567
-                                    Springfield, IL 62704
-                                    USA
+                                127,poonga Nagar
+                                GK Square,Kallu kuzhi saalai
+                                Kurichi, Coimbatore, 641024 TN, India
+                                <a href="mailto:aazhisamaiyalarai@gmail.com" style={{"text-decoration":"none", color:"white"}}> 
+                                    <h5>aazhisamaiyalarai@gmail.com</h5>
+                                </a>
+                                <a href="tel:91+962-996-5844" style={{"text-decoration":"none", color:"white"}}>
+                                    <h5>91+962-996-5844</h5>
+                                </a>
                                 </p>
-
+                                       
+                
+                                        
                             </div>
                         </div>
 
-                        {/* <div className='col-12 col-md-3 footer-content-col' >
-                        <div className='footer-content pt-5'>
-                            <h3>Site Links</h3>
-                            <ul>
-                                <li>Privacy Policy</li>
-                                <li>Shipping Details</li>
-                                <li>Offers Coupons</li>
-                                <li>Terms & Conditions</li>
-                                <li>Shop</li>
-                            </ul>
-
-                        </div>
-                    </div> */}
                     </div>
                 </div>
             </footer>

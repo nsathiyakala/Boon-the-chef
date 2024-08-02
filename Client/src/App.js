@@ -21,6 +21,7 @@ import ComboShippingInfo from './pages/comboShippingInfo';
 import ComboCheckout from './pages/comboCheckout';
 import Refundpolicy from './pages/Refund policy';
 import TermsConditions from './pages/Terms&Conditions';
+import PrivacyPolicy from './pages/privacypolicy';
 
 // import Search from './components/search';
  
@@ -55,6 +56,7 @@ function App() {
           <Route path='/comboCheckout' element={<ComboCheckout/>}/>
           <Route path='/terms&conditions' element={<TermsConditions/>}/>
           <Route path='/refundpolicy' element={<Refundpolicy/>}/>
+          <Route path='/privacy-policy' element={<PrivacyPolicy/>}/>
 
           
           

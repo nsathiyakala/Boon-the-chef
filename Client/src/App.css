@@ -1128,6 +1128,9 @@ p{
   text-decoration: none;
   font-size: 15px;
 }
+.terms-head p a{
+  text-decoration: none;
+}
 .terms-content-inner p{
   font-size: 16px;
 }

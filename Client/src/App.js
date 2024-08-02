@@ -19,6 +19,8 @@ import ShippingInfo from './pages/ShipppingInfo';
 import Checkout from './pages/checkout';
 import ComboShippingInfo from './pages/comboShippingInfo';
 import ComboCheckout from './pages/comboCheckout';
+import Refundpolicy from './pages/Refund policy';
+import TermsConditions from './pages/Terms&Conditions';
 
 // import Search from './components/search';
  
@@ -51,6 +53,8 @@ function App() {
           <Route path='/checkout' element={<Checkout/>}/>
           <Route path='/comboShippinginfo' element={<ComboShippingInfo cartItems={cartItems}/>}/>
           <Route path='/comboCheckout' element={<ComboCheckout/>}/>
+          <Route path='/terms&conditions' element={<TermsConditions/>}/>
+          <Route path='/refundpolicy' element={<Refundpolicy/>}/>
 
           
           

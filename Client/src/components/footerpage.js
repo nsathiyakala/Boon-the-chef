@@ -39,6 +39,10 @@ export default function Footer() {
                                     <li><Link to='/cart' className='text-light no-underline'>Shipping Details</Link></li>
                                     <li><Link to='/comboproducts' className='text-light no-underline'>Combos</Link></li>
                                     <li> <Link to={"/privacy-policy"} className='text-light no-underline'> Privacy Policy</Link></li>
+                                    <li> <Link to={"/terms&conditions"} className='text-light no-underline'>Terms of Conditions
+                                    </Link></li>
+                                    <li> <Link to={"/refundpolicy"} className='text-light no-underline'>Refund Policy
+                                    </Link></li>
                                 </ul>
 
                             </div>

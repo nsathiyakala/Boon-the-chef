@@ -36,27 +36,27 @@ export default function Contact() {
                     <h1 className="text-center">Contact Us</h1>
                     <div className="container contacts">
                         <div className="row contacts-row">
-                            <div className="col-lg-4">
+                            <div className="col-lg-4 mt-3 mt-lg-0">
                                 <div className="card contact-card">
                                     <div className="card-text text-center">
                                         <i className="fa-solid fa-phone contact-icon"></i>
                                         <a href="tel:91+962-996-5844" style={{"text-decoration":"none", color:"black"}}>
-                                        <h5>91+962-996-5844</h5>
+                                        <h5>962-996-5844</h5>
                                         </a>
                 
                                        
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-lg-4">
+                            <div className="col-lg-4 mt-3 mt-lg-0">
                                 <div className="card contact-card">
                                     <div className="card-text text-center">
                                         <i className="fa-solid fa-location-crosshairs contact-icon"></i>
-                                        <h5>127,poonga Nagar, GK Square, , Kallu kuzhi saalai, Kurichi, Coimbatore, 641024 TN, India</h5>
+                                        <h5>127,poonga Nagar,  <br/> GK Square,Kallu kuzhi saalai, <br/> Kurichi, Coimbatore, 641024 TN, India</h5>
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-lg-4">
+                            <div className="col-lg-4 mt-3 mt-lg-0">
                                 <div className="card contact-card">
                                     <div className="card-text text-center">
                                         <i className="fa-solid fa-envelope contact-icon"></i>

@@ -79,7 +79,7 @@ const TermsConditions = () => {
                                 <h6 className='italic'>SECTION 5 - <b> PRODUCTS OR SERVICES (if applicable)</b></h6>
 
                                 <p className='mt-3'>
-                                    Certain products or Services may be available exclusively online through the website. These products or Services may have limited quantities and are subject to return or exchange only according to our Refund Policy: <Link to='/refundpolicy' style={{textDecoration:"none"}}>LINK TO REFUND POLICY</Link>
+                                    Certain products or Services may be available exclusively online through the website. These products or Services may have limited quantities and are subject to return or exchange only according to our Refund Policy: <Link to='/refundpolicy' style={{ textDecoration: "none" }}>LINK TO REFUND POLICY</Link>
                                 </p>
 
                                 <p className='mt-3'>
@@ -111,7 +111,7 @@ const TermsConditions = () => {
                                 </p>
 
                                 <p className='mt-3'>
-                                    For more details, please review our Refund Policy: <Link to='/refundpolicy' style={{textDecoration:"none"}}>LINK TO REFUND POLICY</Link>
+                                    For more details, please review our Refund Policy: <Link to='/refundpolicy' style={{ textDecoration: "none" }}>LINK TO REFUND POLICY</Link>
                                 </p>
 
                                 <hr className='mt-5 mb-5' />
@@ -297,12 +297,14 @@ const TermsConditions = () => {
                                     Our contact information is posted below:
                                 </p>
                                 <p>Boon The Chef <br />
-                                    aazhisamaiyalarai@gmail.com <br />
-                                    127,poonga Nagar
-                                    GK Square,Kallu kuzhi saalai
-                                    Kurichi, Coimbatore, 641024 TN, India <br />
-                                    91+962-996-5844 <br />
-                                    {/* [INSERT BUSINESS REGISTRATION NUMBER] <br />
+                                    <a href="mailto:aazhisamaiyalarai@gmail.com" style={{ color: "black" }}>aazhisamaiyalarai@gmail.com</a> <br />
+                                    127, poonga Nagar
+                                    GK Square, Kallu kuzhi saalai
+                                    Kurichi, Coimbatore, 641024 TN, India. <br />
+                                    <a href="tel:962-996-5844" style={{ color: "black" }}>
+                                        962-996-5844
+                                    </a> <br />
+                                        {/* [INSERT BUSINESS REGISTRATION NUMBER] <br />
                                     [INSERT VAT NUMBER] */}
                                 </p>
 

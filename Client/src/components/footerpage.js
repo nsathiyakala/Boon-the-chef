@@ -53,7 +53,8 @@ export default function Footer() {
                             <div className='footer-content p-5'>
                                 <h3>Follow Us On</h3>
                                 <div className='footer-icons'>
-                                    <i class="fa-solid fa-envelope"></i>
+                                    <a href='mailto:aazhisamaiyalarai@gmail.com' style={{"color":"white"}}><i class="fa-solid fa-envelope" ></i>
+                                    </a>
                                     <i class="fa-brands fa-instagram"></i>
                                     <i class="fa-brands fa-amazon"></i>
                                     <i class="fa-brands fa-facebook"></i>
@@ -66,14 +67,14 @@ export default function Footer() {
                             <div className='footer-content '>
                                 <h3>Contact</h3>
                                 <p>
-                                127,poonga Nagar
-                                GK Square,Kallu kuzhi saalai
-                                Kurichi, Coimbatore, 641024 TN, India
+                                127,poonga Nagar <br/>
+                                GK Square, Kallu kuzhi saalai
+                                Kurichi, <br/> Coimbatore, 641024 TN, India <br/>
                                 <a href="mailto:aazhisamaiyalarai@gmail.com" style={{"text-decoration":"none", color:"white"}}> 
                                     <h5>aazhisamaiyalarai@gmail.com</h5>
                                 </a>
-                                <a href="tel:91+962-996-5844" style={{"text-decoration":"none", color:"white"}}>
-                                    <h5>91+962-996-5844</h5>
+                                <a href="tel:91+ 962-996-5844" style={{"text-decoration":"none", color:"white"}}>
+                                    <h5> 962-996-5844</h5>
                                 </a>
                                 </p>
                                        

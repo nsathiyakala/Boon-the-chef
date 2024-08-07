@@ -105,9 +105,9 @@ export default function Cart({ cartItems, setCartItems }) {
       <Fragment>
         <div className='empty-cart'>
           <p >Your Cart Is Empty!</p>
-          <button className="btn btn-black btn-block">
-            <Link  to={"/products"} style={{color:"#fff",textDecoration:"none"}}>Continue Shopping</Link>
-          </button>
+          {/* <button className="btn btn-black btn-block"> */}
+            <Link  to={"/products"} >Continue Shopping</Link>
+          {/* </button> */}
         </div>
         
       </Fragment>

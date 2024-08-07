@@ -48,7 +48,7 @@ export default function ComboProducts({ cartItems, setCartItems }) {
           {products && products.map(product => (
             
             <div key={product._id} className='col-sm-12 col-md-6 col-lg-4 my-3 best-selling'>
-              <div className="card p-3 rounded">
+              <div className="card rounded">
                 <img className="card-img-top mx-auto" src={product.images[0].image} alt={product.name} />
                 <div className="card-body d-flex flex-column">
                   <h5 className="card-title">

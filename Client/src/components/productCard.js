@@ -6,7 +6,7 @@ export default function ProductCard({product}){
     return(
         <>
         <div className="col-sm-12 col-md-6 col-lg-4 my-3 best-selling" >
-          <div className="card p-3 rounded">
+          <div className="card  rounded">
             <img
               className="card-img-top mx-auto"
               src={product.images[0].image}

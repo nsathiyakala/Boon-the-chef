@@ -289,18 +289,21 @@ footer{
 }
 
 .shopnowBox {
-    margin-top: 50px;
+    /* margin-top: 50px; */
 }
 
 .shopnowBox .row {
     border-radius: 10px;
-    margin-bottom: 15px;
+    /* margin-bottom: 15px; */
 }
 
 .shopnowBox .btn {
     font-size: 1.2rem;
     padding: 10px 20px;
     border-radius: 5px;
+}
+.shopnowBox .carousel-indicators {
+  margin-bottom:0 ;
 }
 
 /* shopnow end */
@@ -657,7 +660,7 @@ textarea {
 }
 
 .why-choose{
-  padding: 50px 0;
+  /* padding: 50px 0; */
   margin: 30px 0;
 }
 .why-choose .row{
@@ -780,18 +783,19 @@ textarea {
 }
 
 .combo{
-  text-align: center;
-  justify-content: center;
-  align-items: center;
+  /* text-align: center; */
+  /* justify-content: center;
+  align-items: center; */
   font-size: larger;
   color: white;
+  padding:20px 20px;
 }
 .combo button{
   text-decoration: none;
   background-color: white;
   border-radius: 10px;
   border: none;
-  padding: 10px 20px;
+  padding: 10px 15px;
   color: black !important;
 
 }
@@ -807,11 +811,16 @@ textarea {
   margin-bottom: 10px;
   padding: 0;
 }
+.about-logo-dev{
+  width: 100px;
+  height: fit-content;
+  margin-top: 10px;
+}
 .about-logo img{
- width: 15%;
+ width: 100%;
 }
 .about-logo h1{
-  padding: 20px;
+  /* padding: 35px 20px 0 20px; */
   /* margin-left: 20px; */
 }
 
@@ -966,6 +975,20 @@ p{
     padding: 5px 10px 10px 30px;
   
   }
+  .shopnowBox .btn {
+    font-size: 1rem;
+    padding: 5px 25px;
+    border-radius: 5px;
+}
+.combo{
+padding:0;
+}
+
+.combo button{
+ margin-top: 0px;
+  padding: 5px 15px;
+
+}
 }
 
 /* shipping info start--------------- */
@@ -1088,12 +1111,14 @@ p{
   font-size: 12px;
 }
 
-.meal-section{
-  height: 80vh;
+
+.meal-container{
+  height: 100%;
+  width: 100%;
   padding: 0;
-  margin:50px 0;
+  /* margin:50px 0; */
 }
-.meal-section img{
+.meal-container img{
   height: 100%;
   width: 100%;
   object-fit: cover;

@@ -6,8 +6,8 @@ export default function About() {
             <div className='container-fluid about'>
                 <h1>About Us</h1>
             </div>
-            <div className='container mt-5'>
-                <div className='row mt-5 about-content'>
+            <div className='container mt-0'>
+                <div className='row  about-content'>
                     <div className='col-lg-6 mt-5 about-content'>
                         <h3>Brand Mission</h3>
                         <p className='about-paragraph mt-3'>
@@ -23,7 +23,7 @@ export default function About() {
                         </p>
                     </div>
 
-                    <div className='col-lg-6 p-5'>
+                    <div className='col-lg-6 pt-5'>
                         <img className='img-fluid' src='./images/web-23.jpg' alt='Mixed' />
                     </div>
                 </div>
@@ -96,14 +96,17 @@ export default function About() {
             </section>
             <div className='container'>
                 <div className='row'>
-                    <div className='col-12 col-lg-6'>
-                        <img src="./images/rava.webp" className="d-block w-100 img-fluid  p-5" alt="First slide" />
+                    <div className='col-12 col-lg-6 order-1 order-lg-0'>
+                        <img src="./images/rava.webp" className="d-block w-100 img-fluid  pt-5" alt="First slide" />
                     </div>
-                    <div className='col-12 col-lg-6 abouts'>
-                        <div className='row mt-5'>
+                    <div className='col-12 col-lg-6 abouts order-0 order-lg-1'>
+                        <div className='row mt-3 mt-lg-5'>
                             <div className='col-12  about-logo' >
+                                <div className='about-logo-dev'>
                                 <img src='./images/Logo.png' className='img-fluid ' alt='Logo' />
-                                <h1 >Certified Products</h1>
+                                </div>
+                                
+                                <h1 className='pt-5'>Certified Products</h1>
                             </div>
                             {/* <div className='col-lg-8 mt-5'>
                                    

@@ -1,10 +1,13 @@
-import React from 'react';
-import { useLocation } from 'react-router-dom';
+import React, { Fragment, useState } from 'react';
+import { useLocation , Link} from 'react-router-dom';
+
 
 const Checkout = () => {
   const location = useLocation();
   // const navigate = useNavigate();
   const { shippingDetails, cartItems } = location.state || {};
+
+  const [ordersucess, setOrdersucess] = useState(false)
 
   if (!shippingDetails || !cartItems) {
     return <p>Error: Missing information</p>;
@@ -33,14 +36,14 @@ const Checkout = () => {
     const options = {
       key: 'rzp_test_OXYGhEnON13iER',
       key_secret: "J9wzb19hWFmpUbrRGvQkVBp7",
-      amount: total * 100, // Razorpay accepts amount in paise
+      amount: total * 100,
       currency: 'INR',
       name: 'Boon The Chef',
       description: 'testing purpose',
       image: 'https://example.com/your_logo',
       handler: function (response) {
         console.log(response);
-        // Send email after successful payment
+        setOrdersucess(true)
         sendEmail(shippingDetails, cartItems, total);
       },
       prefill: {
@@ -81,9 +84,10 @@ const Checkout = () => {
       });
 
       if (response.ok) {
-        alert('Email sent successfully');
+        // setOrdersucess(true)
+        alert('Order Received');
       } else {
-        alert('Failed to send email');
+        alert('Failed to Receive Order Contact Our Team');
       }
     } catch (error) {
       console.error('Error sending email:', error);
@@ -96,43 +100,61 @@ const Checkout = () => {
         <h1>Checkout page</h1>
       </div>
       <div className='container'>
+        {
+          !ordersucess ?
+            <Fragment>
+              <div className="order-summary">
+                <h3>Order Summary</h3>
+                <div className="row">
+                  <div className="col-lg-8">
 
-        <div className="order-summary">
-          <h3>Order Summary</h3>
-          <div className="row">
-            <div className="col-lg-8">
-
-              {cartItems.map((item) => (
-                <div key={item.product._id} className="cart-item row">
-                  <div className="col-3">
-                    <img src={item.product.images[0].image} alt="Product" className="product-image"/>
+                    {cartItems.map((item) => (
+                      <div key={item.product._id} className="cart-item row">
+                        <div className="col-3">
+                          <img src={item.product.images[0].image} alt="Product" className="product-image" />
+                        </div>
+                        <div className="col-9">
+                          <p>{item.product.name}</p>
+                          <p>Quantity: {item.quantity}</p>
+                          <p>Price: ${item.product.price}</p>
+                        </div>
+                      </div>
+                    ))}
+                    <h4>Total: ${total.toFixed(2)}</h4>
                   </div>
-                  <div className="col-9">
-                    <p>{item.product.name}</p>
-                    <p>Quantity: {item.quantity}</p>
-                    <p>Price: ${item.product.price}</p>
+                  <div className="col-lg-4">
+                    <div className="shipping-details">
+                      <h3>Shipping Information</h3>
+                      <p>{shippingDetails.fullName}</p>
+                      <p>{shippingDetails.address}</p>
+                      <p>{shippingDetails.city}, {shippingDetails.state} {shippingDetails.zipCode}</p>
+                      <p>{shippingDetails.country}</p>
+                      <p>{shippingDetails.phoneNumber}</p>
+                    </div>
+
+                    <button className="btn btn-black" onClick={handlePayment}>
+                      Proceed to Payment
+                    </button>
                   </div>
                 </div>
-              ))}
-              <h4>Total: ${total.toFixed(2)}</h4>
-            </div>
-            <div className="col-lg-4">
-              <div className="shipping-details">
-                <h3>Shipping Information</h3>
-                <p>{shippingDetails.fullName}</p>
-                <p>{shippingDetails.address}</p>
-                <p>{shippingDetails.city}, {shippingDetails.state} {shippingDetails.zipCode}</p>
-                <p>{shippingDetails.country}</p>
-                <p>{shippingDetails.phoneNumber}</p>
+
+              </div>
+            </Fragment>
+            : <Fragment>
+
+              <div className='d-flex flex-column  align-item-center justify-content-center text-center' style={{ height: "200px" }} >
+                <h4 style={{ fontWeight: "700" }}>Order Successfull !</h4>
+                <p style={{ fontSize: "13px" }}>You'll be Received Our Mail</p>
+                {/* <button className="btn btn-black btn-block" > */}
+                  <Link to={"/products"} >Continue Shopping</Link>
+                {/* </button> */}
               </div>
 
-              <button className="btn btn-black" onClick={handlePayment}>
-                Proceed to Payment
-              </button>
-            </div>
-          </div>
+            </Fragment>
 
-        </div>
+        }
+
+
 
       </div>
 

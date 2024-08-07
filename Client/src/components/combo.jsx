@@ -1,20 +1,20 @@
 import { Link } from "react-router-dom";
 
-export default function Combo (){
-    return(
+export default function Combo() {
+    return (
         <>
-        <section className="container">
+            <section className="container">
                 <div className="row  combo">
-                    <div className="col-lg-10 ">
-                    <h1 className="text-start p-5">Created your combo</h1>
+                    <div className="  col-sm-9">
+                        <h1 className="text-start">Created your combo</h1>
                     </div>
-                    <div className="col-lg-2">
-                    <button> <Link to={'/comboproducts'} className="text-center mt-5 p-5 no-underline">Create</Link>
-                     </button>
+                    <div className="col-sm-3 ">
+                        <button> <Link to={'/comboproducts'} className="text-center  p-5 no-underline">Create</Link>
+                        </button>
 
                     </div>
                 </div>
-        </section>
+            </section>
         </>
     )
 }

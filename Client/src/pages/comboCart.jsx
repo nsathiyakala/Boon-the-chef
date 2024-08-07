@@ -104,8 +104,8 @@ export default function ComboCart({ cartItems, setCartItems }) {
                                 <hr />
                                 <div className="checkout-buttons">
                                     <button onClick={backsubmit} className="btn btn-black btn-block mb-3">Back</button>
-                                    <Link to={"/comboShippinginfo"} state={{ selectedProduct: updatedProducts }}>
-                                      <button className="btn btn-black btn-block" style={{"text-decoration":"none"}}>Place Order</button>
+                                    <Link to={"/comboShippinginfo"} state={{ selectedProduct: updatedProducts }}  style={{textDecoration:"none"}}>
+                                      <button className="btn btn-black btn-block">Place Order</button>
                                     </Link>
                                 </div>
                             </div>

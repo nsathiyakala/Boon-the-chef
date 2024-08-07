@@ -40,7 +40,6 @@ const ComboCheckout = () => {
       handler: function (response) {
         console.log(response);
         // Send email after successful payment
-        sendEmail(shippingDetails, selectedProduct, total);
       },
       prefill: {
         name: shippingDetails.fullName,
@@ -59,35 +58,7 @@ const ComboCheckout = () => {
     paymentObject.open();
   };
 
-  const sendEmail = async (shippingDetails, selectedProduct, total) => {
-    const orderDetails = {
-      shippingDetails,
-      selectedProduct,
-      total,
-    };
 
-    try {
-      const response = await fetch('http://localhost:8000/boonthechef/send-email', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          buyerEmail: shippingDetails.email,
-          sellerEmail: 'sathiyakalavirtue@gmail.com',
-          orderDetails,
-        }),
-      });
-
-      if (response.ok) {
-        alert('Email sent successfully');
-      } else {
-        alert('Failed to send email');
-      }
-    } catch (error) {
-      console.error('Error sending email:', error);
-    }
-  };
 
   return (
     <div className="checkout-page">
@@ -134,3 +105,4 @@ const ComboCheckout = () => {
 };
 
 export default ComboCheckout;
+

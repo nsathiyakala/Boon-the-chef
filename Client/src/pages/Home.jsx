@@ -91,9 +91,9 @@ function Home({cartItems}) {
                     
                 </div>
             </div> */}
-            <div className="row" >
-                <div className="col-12 col-lg-4 pt-5 pb-5">
-                    <div className="why-choose-content text-end" >
+            <div className="row p-0" >
+                <div className="col-12 col-lg-4 pt-5 pb-5 p-0 " >
+                    <div className="why-choose-content text-end " >
                         <div className="why-choose-inner" >
                             <h4>Free Delivery<i className="fa-solid fa-truck"></i></h4>
                             <p>Enjoy free delivery on every purchase, ensuring your orders arrive conveniently at your doorstep</p>
@@ -109,14 +109,14 @@ function Home({cartItems}) {
                     </div>
                 </div>
 
-                <div className="col-12 col-lg-4"  >
+                <div className="col-12 col-lg-4 "  >
                     <div className="why-choose-img " >
                         <img className="img-fluid" src="./images/singleimg.png" alt="" />
                     </div>
                 </div>
 
-                <div className="col-12 col-lg-4 pt-5" >
-                    <div className="why-choose-content" >
+                <div className="col-12 col-lg-4 pt-5 p-0" >
+                    <div className="why-choose-content " >
                         <div className="why-choose-inner">
                             <h4 className="ih"> <i className="fa-solid fa-recycle"></i> Reusable Package</h4>
                             <p className="ip">Choose our reusable packaging option for sustainable shopping solutions, reducing waste with each order.</p>
@@ -185,7 +185,7 @@ function Home({cartItems}) {
       {/* ------conbo-end--------- */}
 
       {/* card start */}
-      <section id="products" className="container mt-5 p-5">
+      <section id="products" className="container mt-5 pt-5 pb-5">
         <div className="row">
           <h1 className='text text-center mt-5'>Best Selling Products</h1>
           {/* <div className="col-12 my-3 " style={{border:"1px solid red"}} > */}
@@ -198,13 +198,13 @@ function Home({cartItems}) {
       {/* <section className='container-fluid shop-now p-4'>
         <ShopNow />
       </section> */}
-      <section>
-        <div className='container-fluid meal-section'>
+      <section className='meal-section mt-5 '>
+        <div className='container-fluid meal-container'>
           <img src="./images/web-31.jpg" alt="" />
           </div>
       </section>
       
-      <section className='container-fluid testimonal p-5'>
+      <section className='container-fluid testimonal pt-5 pb-5'>
         <h3 className='tesimonals-text text-center'>Testimonial</h3>
         <Testimonal />
       </section>

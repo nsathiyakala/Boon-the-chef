@@ -8,13 +8,13 @@ export default function Footer() {
                 <div className='container footer-container'>
                     <div className='row'>
                         <div className='col-12 col-md-6 footer-content-col' >
-                            <div className='footer-content p-5'>
+                            <div className='footer-content'>
                                 <div>
                                     <img className='img-fluid footer-logo' src="./images/Logo.png" alt="logo" />
                                 </div>
                                 <h1>Boon The Chef</h1>
                                 <p>
-                                Boon the Chef, spanning four generations, preserves cherished recipes from our great grandmother, delivering traditional flavors and nostalgia worldwide.
+                                    Boon the Chef, spanning four generations, preserves cherished recipes from our great grandmother, delivering traditional flavors and nostalgia worldwide.
                                 </p>
                             </div>
                         </div>
@@ -25,7 +25,7 @@ export default function Footer() {
                                 <ul >
                                     <li><Link to='/home' className='text-light no-underline'>Home</Link></li>
                                     <li><Link to='/about' className='text-light no-underline'>About</Link></li>
-                                    <li><Link to='/products'className='text-light no-underline'>Product</Link></li>
+                                    <li><Link to='/products' className='text-light no-underline'>Product</Link></li>
                                     <li><Link to='/contact' className='text-light no-underline'>Contact</Link></li>
                                 </ul>
 
@@ -50,10 +50,10 @@ export default function Footer() {
                     </div>
                     <div className='row'>
                         <div className='col-12 col-md-6 footer-content-col' >
-                            <div className='footer-content p-5'>
+                            <div className='footer-content'>
                                 <h3>Follow Us On</h3>
                                 <div className='footer-icons'>
-                                    <a href='mailto:aazhisamaiyalarai@gmail.com' style={{"color":"white"}}><i class="fa-solid fa-envelope" ></i>
+                                    <a href='mailto:aazhisamaiyalarai@gmail.com' style={{ "color": "white" }}><i class="fa-solid fa-envelope" ></i>
                                     </a>
                                     <i class="fa-brands fa-instagram"></i>
                                     <i class="fa-brands fa-amazon"></i>
@@ -67,19 +67,19 @@ export default function Footer() {
                             <div className='footer-content '>
                                 <h3>Contact</h3>
                                 <p>
-                                127,poonga Nagar <br/>
-                                GK Square, Kallu kuzhi saalai
-                                Kurichi, <br/> Coimbatore, 641024 TN, India <br/>
-                                <a href="mailto:aazhisamaiyalarai@gmail.com" style={{"text-decoration":"none", color:"white"}}> 
-                                    <h5>aazhisamaiyalarai@gmail.com</h5>
-                                </a>
-                                <a href="tel:91+ 962-996-5844" style={{"text-decoration":"none", color:"white"}}>
-                                    <h5> 962-996-5844</h5>
-                                </a>
+                                    127,poonga Nagar <br />
+                                    GK Square, Kallu kuzhi saalai
+                                    Kurichi, <br /> Coimbatore, 641024 TN, India <br />
+                                    <a href="mailto:aazhisamaiyalarai@gmail.com" style={{ "text-decoration": "none", color: "white" }}>
+                                        <h5>aazhisamaiyalarai@gmail.com</h5>
+                                    </a>
+                                    <a href="tel:91+ 962-996-5844" style={{ "text-decoration": "none", color: "white" }}>
+                                        <h5> 962-996-5844</h5>
+                                    </a>
                                 </p>
-                                       
-                
-                                        
+
+
+
                             </div>
                         </div>
 

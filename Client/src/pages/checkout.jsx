@@ -86,8 +86,6 @@ const Checkout = () => {
       if (response.ok) {
         // setOrdersucess(true)
         alert('Order Received');
-      } else {
-        alert('Failed to Receive Order Contact Our Team');
       }
     } catch (error) {
       console.error('Error sending email:', error);

@@ -1,14 +1,14 @@
-import React, { Fragment, useState } from 'react';
-import { useLocation } from 'react-router-dom';
+import React from 'react';
+import { Link, useLocation } from 'react-router-dom';
 
-const ComboCheckout = () => {
+const ComboCheckout = ({orderSuccess,setOrderSuccess,setCartItems}) => {
   const location = useLocation();
   const { shippingDetails, selectedProduct } = location.state || {};
-  const [ordersucess, setOrderSuccess] = useState(false)
+  // const [ordersucess, setOrderSuccess] = useState(false);
   if (!shippingDetails || !selectedProduct) {
     return <p>Error: Missing information</p>;
   }
-
+  
   const total = selectedProduct.reduce((acc, item) => acc + item.price * item.quantity, 0);
 
   const loadRazorpayScript = () => {
@@ -40,6 +40,7 @@ const ComboCheckout = () => {
       handler: function (response) {
         console.log(response);
         setOrderSuccess(true);
+        setCartItems([]);
         sendEmail(shippingDetails, selectedProduct, total);
 
       },

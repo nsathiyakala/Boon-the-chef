@@ -28,6 +28,8 @@ import PrivacyPolicy from './pages/privacypolicy';
 
 function App() {
   const[cartItems,setCartItems]=useState([]);
+  const [orderSuccess, setOrderSuccess] = useState(false)
+
 
   return (
     <BrowserRouter>
@@ -51,9 +53,9 @@ function App() {
           <Route path='/comboproducts' element={<ComboProducts/>} />
           <Route path='/combocart' element={<ComboCart/>}/>
           <Route path="/shippinginfo" element={<ShippingInfo cartItems={cartItems}/>}/>
-          <Route path='/checkout' element={<Checkout/>}/>
+          <Route path='/checkout' element={<Checkout orderSuccess={orderSuccess} setOrderSuccess={setOrderSuccess} setCartItems={setCartItems}/>} />
           <Route path='/comboShippinginfo' element={<ComboShippingInfo cartItems={cartItems}/>}/>
-          <Route path='/comboCheckout' element={<ComboCheckout/>}/>
+          <Route path='/comboCheckout' element={<ComboCheckout orderSuccess={orderSuccess} setOrderSuccess={setOrderSuccess} setCartItems={setCartItems}/> }/>
           <Route path='/terms&conditions' element={<TermsConditions/>}/>
           <Route path='/refundpolicy' element={<Refundpolicy/>}/>
           <Route path='/privacy-policy' element={<PrivacyPolicy/>}/>

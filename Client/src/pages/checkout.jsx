@@ -1,13 +1,9 @@
-import React, { Fragment, useState } from 'react';
-import { useLocation , Link} from 'react-router-dom';
+import React, { Fragment } from 'react';
+import { useLocation, Link } from 'react-router-dom';
 
-
-const Checkout = () => {
+const Checkout = ({ orderSuccess, setOrderSuccess, setCartItems }) => {
   const location = useLocation();
-  // const navigate = useNavigate();
   const { shippingDetails, cartItems } = location.state || {};
-
-  const [ordersucess, setOrdersucess] = useState(false)
 
   if (!shippingDetails || !cartItems) {
     return <p>Error: Missing information</p>;
@@ -40,10 +36,10 @@ const Checkout = () => {
       currency: 'INR',
       name: 'Boon The Chef',
       description: 'testing purpose',
-      image: 'https://example.com/your_logo',
       handler: function (response) {
         console.log(response);
-        setOrdersucess(true)
+        setOrderSuccess(true);
+        setCartItems([]);
         sendEmail(shippingDetails, cartItems, total);
       },
       prefill: {
@@ -84,7 +80,6 @@ const Checkout = () => {
       });
 
       if (response.ok) {
-        // setOrdersucess(true)
         alert('Order Received');
       }
     } catch (error) {
@@ -99,13 +94,12 @@ const Checkout = () => {
       </div>
       <div className='container'>
         {
-          !ordersucess ?
+          !orderSuccess ?
             <Fragment>
               <div className="order-summary">
                 <h3>Order Summary</h3>
                 <div className="row">
                   <div className="col-lg-8">
-
                     {cartItems.map((item) => (
                       <div key={item.product._id} className="cart-item row">
                         <div className="col-3">
@@ -135,27 +129,17 @@ const Checkout = () => {
                     </button>
                   </div>
                 </div>
-
               </div>
             </Fragment>
             : <Fragment>
-
-              <div className='d-flex flex-column  align-item-center justify-content-center text-center' style={{ height: "200px" }} >
-                <h4 style={{ fontWeight: "700" }}>Order Successfull !</h4>
-                <p style={{ fontSize: "13px" }}>You'll be Received Our Mail</p>
-                {/* <button className="btn btn-black btn-block" > */}
-                  <Link to={"/products"} >Continue Shopping</Link>
-                {/* </button> */}
+              <div className='d-flex flex-column align-item-center justify-content-center text-center' style={{ height: "200px" }}>
+                <h4 style={{ fontWeight: "700" }}>Order Successful!</h4>
+                <p style={{ fontSize: "13px" }}>You'll receive our email shortly.</p>
+                <Link to={"/products"}>Continue Shopping</Link>
               </div>
-
             </Fragment>
-
         }
-
-
-
       </div>
-
     </div>
   );
 };

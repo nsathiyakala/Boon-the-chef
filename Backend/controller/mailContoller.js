@@ -51,9 +51,11 @@ exports.sendEmail = async (req, res) => {
     PRODUCT DETAILS:
     ${orderDetails.cartItems ?.map(item => `
     Product Name: ${item.product.name}
-    Quantity: ${item.quantity}`).join('\n')}
+    Quantity: ${item.quantity}
+    price: ${item.product.price}`).join('\n')}
     
-    ₹${orderDetails.total} Payment Successful
+    
+    Total ₹${orderDetails.total} Payment Successful
     
     CUSTOMER DETAILS:
     Customer Name: ${orderDetails.shippingDetails.fullName}
@@ -119,9 +121,11 @@ exports.sendEmail1 = async (req, res) => {
     PRODUCT DETAILS:
     ${orderDetails .selectedProduct ?.map(item => `
     Product Name: ${item.name}
-    Quantity: ${item.quantity}`).join('\n')}
+    Quantity: ${item.quantity}
+    price: ${item.price}`).join('\n')}
     
-    ₹${orderDetails.total} Payment Successful
+    
+    Total ₹${orderDetails.total} Payment Successful
     
     CUSTOMER DETAILS:
     Customer Name: ${orderDetails.shippingDetails.fullName}

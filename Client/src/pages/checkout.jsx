@@ -84,7 +84,6 @@ const Checkout = () => {
       });
 
       if (response.ok) {
-        // setOrdersucess(true)
         alert('Order Received');
       }
     } catch (error) {
@@ -114,7 +113,7 @@ const Checkout = () => {
                         <div className="col-9">
                           <p>{item.product.name}</p>
                           <p>Quantity: {item.quantity}</p>
-                          <p>Price: ${item.product.price}</p>
+                          <p>Price: ₹{item.product.price}</p>
                         </div>
                       </div>
                     ))}
@@ -142,7 +141,7 @@ const Checkout = () => {
 
               <div className='d-flex flex-column  align-item-center justify-content-center text-center' style={{ height: "200px" }} >
                 <h4 style={{ fontWeight: "700" }}>Order Successfull !</h4>
-                <p style={{ fontSize: "13px" }}>You'll be Received Our Mail</p>
+                <p style={{ fontSize: "13px" }}>You'll receive an email confirmation shortly.</p>
                 {/* <button className="btn btn-black btn-block" > */}
                   <Link to={"/products"} >Continue Shopping</Link>
                 {/* </button> */}

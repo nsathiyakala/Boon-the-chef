@@ -1,5 +1,5 @@
-import React, { Fragment, useState } from 'react';
-import { useLocation } from 'react-router-dom';
+import React, { useState } from 'react';
+import { useLocation,Link } from 'react-router-dom';
 
 const ComboCheckout = () => {
   const location = useLocation();
@@ -32,11 +32,10 @@ const ComboCheckout = () => {
     const options = {
       key: 'rzp_test_OXYGhEnON13iER',
       key_secret: "J9wzb19hWFmpUbrRGvQkVBp7",
-      amount: total * 100, // Razorpay accepts amount in paise
+      amount: total * 100, 
       currency: 'INR',
       name: 'Boon The Chef',
       description: 'testing purpose',
-      // image: 'https://example.com/your_logo',
       handler: function (response) {
         console.log(response);
         setOrderSuccess(true);
@@ -81,7 +80,6 @@ const ComboCheckout = () => {
       });
 
       if (response.ok) {
-        // setOrdersucess(true)
         alert('Order Received');
       } else {
         alert('Failed to Receive Order Contact Our Team');
@@ -99,7 +97,7 @@ const ComboCheckout = () => {
         <h1>Checkout Page</h1>
       </div>
       <div className='container'>
-        {!orderSuccess ? (
+        {!ordersucess ? (
           <div className="order-summary">
             <h3>Order Summary</h3>
             <div className="row">
@@ -137,7 +135,7 @@ const ComboCheckout = () => {
           <div className='d-flex flex-column align-items-center justify-content-center text-center' style={{ height: "200px" }}>
             <h4 style={{ fontWeight: "700" }}>Order Successful!</h4>
             <p style={{ fontSize: "13px" }}>You'll receive an email confirmation shortly.</p>
-            <Link to={"/products"}>Continue Shopping</Link>
+            <Link to={"/comboproducts"}>Continue Shopping</Link>
           </div>
         )}
       </div>

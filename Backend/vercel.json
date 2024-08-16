@@ -13,8 +13,8 @@
     }
   ],
   "env": {
-    "NODE_ENV": "production",
-    "API_KEY": "@api-key"
+    "NODE_ENV": "production"
+    
   },
   "build": {
     "env": {

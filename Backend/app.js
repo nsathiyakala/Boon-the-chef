@@ -13,6 +13,10 @@ app.use(express.json()); // Middleware to parse JSON bodies
 app.use(cors());
 app.use(bodyParser.json())
 connectDatabase();
+app.get('/hello', (req, res) => {
+  res.send('Hello, World!');
+});
+
 
 const products = require('./routes/product');
 const sendEmail  = require('./routes/mail');

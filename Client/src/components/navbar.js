@@ -7,6 +7,7 @@ export default function Navbar({ cartItems }) {
       <nav className="navbar navbar-expand-lg">
         <div className="container-fluid d-flex justify-content-between align-items-center">
           <div className="logo-img">
+          
             <img className="img-fluid logo" src="./images/logo.png" alt="Logo" style={{ width: '90px' }} />
           </div>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

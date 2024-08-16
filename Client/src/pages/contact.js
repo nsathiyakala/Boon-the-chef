@@ -3,11 +3,9 @@ import { toast } from "react-toastify";
 
 export default function Contact() {
 
-    // const [result, setResult] = useState("");
 
     const onSubmit = async (event) => {
         event.preventDefault();
-        // setResult("Sending....");
         const formData = new FormData(event.target);
 
         formData.append("access_key", "f9afd126-4733-45c2-8294-09464814e23c");
@@ -20,13 +18,10 @@ export default function Contact() {
         const data = await response.json();
 
         if (data.success) {
-            // setResult("Form Submitted Successfully");
             toast.success("Form Submited, We'll Reach You Shortly")
-            // alert("Form Submitted Successfully")
             event.target.reset();
         } else {
             console.log("Error", data);
-            // setResult(data.message);
         }
     }
 
@@ -75,19 +70,15 @@ export default function Contact() {
                             <div className="col-12 col-lg-6">
                                 <form className="contact-form" onSubmit={onSubmit}>
                                     <div className="form-group">
-                                        {/* <label htmlFor="name">Name</label> */}
                                         <input type="text" id="name" name="name" placeholder="Enter your name" required />
                                     </div>
                                     <div className="form-group">
-                                        {/* <label htmlFor="phone">Phone</label> */}
                                         <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required />
                                     </div>
                                     <div className="form-group">
-                                        {/* <label htmlFor="email">Email</label> */}
                                         <input type="email" id="email" name="email" placeholder="Enter your email address" required />
                                     </div>
                                     <div className="form-group">
-                                        {/* <label htmlFor="message">Message</label> */}
                                         <textarea id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
                                     </div>
                                     <button type="submit" className="btn btn-primary">Send Message</button>

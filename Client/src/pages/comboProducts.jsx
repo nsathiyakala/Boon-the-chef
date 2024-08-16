@@ -8,7 +8,7 @@ export default function ComboProducts({ cartItems, setCartItems }) {
   const navigate = useNavigate(); 
 
   useEffect(() => {
-    fetch('http://localhost:8000/boonthechef/products')
+    fetch('https://boon-the-chef.vercel.app/boonthechef/products')
       .then(res => res.json())
       .then(res => setProducts(res.products));
   }, []);
@@ -65,7 +65,6 @@ export default function ComboProducts({ cartItems, setCartItems }) {
                     <i className="fa fa-star-o"></i>
                   </div>
                   <p className="card-text">${product.price}</p>
-                  {/* <Link to={"/product/"+product._id} className="btn btn-block" id="view_btn">View Details</Link> */}
                 </div>
                 <hr />
                 <div className="d-flex justify-content-center">

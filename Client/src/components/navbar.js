@@ -34,10 +34,6 @@ export default function Navbar({ cartItems }) {
                   <span id='cart-count' >{ cartItems && cartItems.length}</span>
                 </Link>
               </div>
-           
-              {/* <Link to="/user" className="text-dark text-decoration-none">
-                <i className="fas fa-user"></i>
-              </Link> */}
             </div>
           </div>
         </div>

@@ -1,8 +1,7 @@
 import React, { Fragment, useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { toast } from 'react-toastify';
-import Footer from "../components/footerpage";
-import Navbar from "../components/navbar";
+
 
 export default function ProductDetails({ cartItems, setCartItems }) {
   const [product, setProduct] = useState(null);
@@ -10,7 +9,7 @@ export default function ProductDetails({ cartItems, setCartItems }) {
   const { id } = useParams();
 
   useEffect(() => {
-    fetch(`http://localhost:8000/boonthechef/product/${id}`)
+    fetch(`https://boon-the-chef.vercel.app/boonthechef/product/${id}`)
       .then(res => res.json())
       .then(res => setProduct(res.product))
       .catch(error => console.error('Error fetching product:', error));

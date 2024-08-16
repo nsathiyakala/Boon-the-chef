@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from "react";
+import React, { Fragment } from "react";
 
 import { Link } from "react-router-dom";
 
@@ -21,7 +21,6 @@ export default function Cart({ cartItems, setCartItems }) {
   const total = cartItems.reduce((acc, item) => acc + item.product.price * item.quantity, 0);
   console.log(total);
 
-  const [complete, setComplete] = useState(false)
 
 
   return (
@@ -105,9 +104,7 @@ export default function Cart({ cartItems, setCartItems }) {
       <Fragment>
         <div className='empty-cart'>
           <p >Your Cart Is Empty!</p>
-          {/* <button className="btn btn-black btn-block"> */}
             <Link  to={"/products"} >Continue Shopping</Link>
-          {/* </button> */}
         </div>
         
       </Fragment>

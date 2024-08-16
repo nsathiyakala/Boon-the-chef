@@ -1,4 +1,4 @@
-import React, { Fragment, createElement, useEffect, useState } from 'react';
+import React, { Fragment, useEffect, useState } from 'react';
 import ProductCard from '../components/productCard'; 
 
 export default function Products() {
@@ -9,7 +9,7 @@ export default function Products() {
     useEffect(() => {
         const fetchProducts = async () => {
             try {
-                const response = await fetch(`http://localhost:8000/boonthechef/products?category=${category}`);
+                const response = await fetch(`https://boon-the-chef.vercel.app/boonthechef/products?category=${category}`);
                 if (!response.ok) {
                     throw new Error('Failed to fetch products');
                 }

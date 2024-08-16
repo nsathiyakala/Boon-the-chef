@@ -108,9 +108,7 @@ export default function About() {
                                 
                                 <h1 className='pt-5'>Certified Products</h1>
                             </div>
-                            {/* <div className='col-lg-8 mt-5'>
-                                   
-                                </div> */}
+                          
                             <div>
                                 <h3>We Deal With Various Quality Organic Products!</h3>
                                 <div className='row abouts-row'>

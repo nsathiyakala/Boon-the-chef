@@ -151,7 +151,7 @@ function Home({cartItems}) {
       </section>
       
       <section className='container-fluid testimonal pt-5 pb-5'>
-        <h3 className='tesimonals-text text-center'>Testimoniall</h3>
+        <h3 className='tesimonals-text text-center'>Testimonial</h3>
         <Testimonal />
       </section>
     </Fragment>

@@ -10,7 +10,7 @@ export default function Footer() {
                         <div className='col-12 col-md-6 footer-content-col' >
                             <div className='footer-content'>
                                 <div>
-                                    <img className='img-fluid footer-logo' src="./images/logo.png" alt="logo" />
+                                    <img className='img-fluid footer-logo' src="./images/Logo.png" alt="logo" />
                                 </div>
                                 <h1>Boon The Chef</h1>
                                 <p>

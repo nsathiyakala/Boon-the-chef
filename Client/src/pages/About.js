@@ -24,7 +24,7 @@ export default function About() {
                     </div>
 
                     <div className='col-lg-6 pt-5'>
-                        <img className='img-fluid' src='./images/web-23.jpg' alt='Mixed' />
+                        <img className='img-fluid' src='./images/Web-23.jpg' alt='Mixed' />
                     </div>
                 </div>
             </div>

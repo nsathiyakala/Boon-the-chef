@@ -146,7 +146,7 @@ function Home({cartItems}) {
       
       <section className='meal-section mt-5 '>
         <div className='container-fluid meal-container'>
-          <img src="./images/web-31.jpg" alt="" />
+          <img src="./images/Web-31.jpg" alt="" />
           </div>
       </section>
       

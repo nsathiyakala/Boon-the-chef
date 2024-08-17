@@ -106,7 +106,7 @@ export default function About() {
                                 <img src='./images/logo.png' className='img-fluid ' alt='Logo' />
                                 </div>
                                 
-                                <h1 className='pt-5'>Certified Products</h1>
+                                <h1 className='pt-5'>Certified Productss</h1>
                             </div>
                           
                             <div>

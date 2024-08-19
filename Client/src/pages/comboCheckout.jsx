@@ -82,7 +82,7 @@ const ComboCheckout = ({orderSuccess,setOrderSuccess,setCartItems}) => {
       if (response.ok) {
         alert('Order Received');
       } else {
-        alert('Failed to Receive Order Contact Our Team');
+        alert('There is a Server Error, Failed to Receive Order please Contact Our Team');
       }
     } catch (error) {
       console.error('Error sending email:', error.message);

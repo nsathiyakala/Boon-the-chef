@@ -83,6 +83,7 @@ const Checkout = ({ orderSuccess, setOrderSuccess, setCartItems }) => {
         alert('Order Received');
       }
     } catch (error) {
+      alert('There is a Server Error, Failed to Receive Order please Contact Our Team');
       console.error('Error sending email:', error);
     }
   };

@@ -1,0 +1,151 @@
+[
+    {
+        "name": "Adai Dosai Mix",
+        "price":  200.00,
+        "description": "Get a protein boost with our Adai Dosai Mix. Made with a unique blend of four lentils (Kadalai Paruppu, Thuvaram Paruppu, Ulunthu and Paasi Paruppu), our mix is a nutritious and delicious Protein rich option for your meals. We prioritize protein to give you the best possible dosai experience.Share",
+        "images": [
+            {
+                "image": "/images/adai.jpg"
+            }
+        ],
+        "category": "Millets"
+    },
+    {
+        "name": "Cholam Dosai Mix(Jowar)",
+        "price": 135.00,
+        "description": "Cholam Dosai Mix is Prepared with the blending of Jowar which has a low glycemic index with rice and rava. Ajwain, Asafoetida and Cumin are added to Enhance the Flavour and helps in easy Digestion.",
+        "images": [
+            {
+                "image": "/images/cholam.jpg"
+            }
+        ],
+        "category": "Millets"
+    },
+    {
+        "name": "Kambu Dosai Mix(Pearl Millet)",
+        "price": 135.00,
+        "description": "Kambu Dosai Mix is Prepared with the blending of Kambu which has high Iron content accompanied with rice, rava and jowar. Ajwain, Asafoetida and Cumin are added to Enhance the Flavour and helps in easy Digestion.",
+        "images": [
+            {
+                "image": "/images/kambu.webp"
+            }
+        ],
+        "category": "Millets"
+    },
+    {
+        "name": "Health Mix",
+        "price": 200.00,
+        "description": "Health Mix is the perfect blend of 19 millets and pulses, providing a homemade, nutritional start to your day. Packed with essential nutrients and minerals, this mix ensures a healthy and balanced diet. Give yourself the best start possible with BOON the CHEF Health Mix.",
+        "images": [
+            {
+                "image": "/images/Healthmixed.jpg"
+            }
+        ],
+        "category": "Millets"
+    },
+    {
+        "name": "Keazhvaragu Dosai Mix (Finger Millet)",
+        "price": 135.00,
+        "description": "Keazhvaragu Dosai Mix is Prepared with the careful blending of Keazhvaragu which has a high protein content accompanied by rice, rava and jowar. we add Ajwain, Asafoetida and Cumin to Enhance the Flavour and helps in easy Digestion.",
+
+        "images": [
+            {
+                "image": "/images/kelvaragu.jpg"
+            }
+        ],
+        "category": "Millets"
+    },
+
+    {
+        "name": "Beat the Heat Combo (Kambu(Pearl Millet), Thinai(Foxtail Millet), Solam(Sorghum)) Dosa Mixes",
+        "price": 135.00,
+        "description": "Keazhvaragu Dosai Mix is Prepared with the careful blending of Keazhvaragu which has a high protein content accompanied by rice, rava and jowar. we add Ajwain, Asafoetida and Cumin to Enhance the Flavour and helps in easy Digestion.",
+
+        "images": [
+            {
+                "image": "/images/thinai.jpg"
+            }
+        ],
+        "category": "Millets"
+    },
+
+    {
+        "name": "Beat the Heat Combo (Kambu(Pearl Millet), Thinai(Foxtail Millet), Solam(Sorghum)) Dosa Mixes",
+        "price": 430.00,
+        "description": "Introducing the Beat the Heat Combo - expertly curated to keep your body cool during scorching summer days. Experience the benefits of staying cool with this powerful combination of products. Don't let the heat get to you - stay cool with Beat the Heat.",
+
+        "images": [
+            {
+                "image": "/images/mixed3.jpg"
+            }
+        ],
+        "category": "Millets"
+    },
+
+    {
+        "name": "Kuthiraivali Dosai Mix(Barnyard Millet)",
+        "price": 165.00,
+        "description": "Kuthiraivali Dosai Mix is Prepared with the appropriate portion of blending of Kuthiraivali which is high in Iron and Fiber with rice, rava and jowar. Ajwain, Asafoetida and Cumin are added to Enhance the Flavour and helps in easy Digestion.",
+
+        "images": [
+            {
+                "image": "/images/mixed3.jpg"
+            }
+        ],
+        "category": "Millets"
+    },
+
+    {
+        "name": "Rava Dosai Mix",
+        "price": 135.00,
+        "description": "As a fibre-rich mix made with whole wheat, Rava Dosai Mix is a nourishing and healthy choice for making traditional South Indian dosais. Savour the delicious taste of dosas while enjoying the benefits of a high-fiber diet. An expertly crafted blend ensures a nutritious and wholesome meal.",
+
+        "images": [
+            {
+                "image": "/images/mixed3.jpg"
+            }
+        ],
+        "category": "Millets"
+    },
+
+    {
+        "name": "Samai Dosai Mix(Little Millet)",
+        "price":165.00,
+        "description": "Samai Dosa Mix is Prepared with the blending of Samai which is rich in niacin and magnesium with rice, rava and jowar. Ajwain, Asafoetida and Cumin are added to Enhance the Flavour and helps in easy Digestion",
+
+        "images": [
+            {
+                "image": "/images/mixed3.jpg"
+            }
+        ],
+        "category": "Millets"
+    },
+
+    {
+        "name": "Thinai Dosai Mix(FoxTail Millet)",
+        "price": 165.00,
+        "description": "Thinai Dosai Mix is Prepared with the blending of Thinai which has a high fiber with rice, rava and jowar. Ajwain, Asafoetida and Cumin are added to Enhance the Flavour and help in easy Digestion.",
+
+        "images": [
+            {
+                "image": "/images/mixed3.jpg"
+            }
+        ],
+        "category": "Millets"
+    },
+
+    {
+        "name": "Varagu Dosai Mix(Kodo Millet)",
+        "price": 165.00,
+        "description": "Varagu Dosai Mix is Prepared with a blending of Varagu with a high lecithin content in proportion with rice, Rava and jowar. Ajwain, Asafoetida and Cumin are added to Enhance the Flavour and helps in easy Digestion",
+
+        "images": [
+            {
+                "image": "/images/mixed3.jpg"
+            }
+        ],
+        "category": "Millets"
+    }
+
+
+]

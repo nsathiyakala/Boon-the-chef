@@ -103,7 +103,7 @@ export default function About() {
                         <div className='row mt-3 mt-lg-5'>
                             <div className='col-12  about-logo' >
                                 <div className='about-logo-dev'>
-                                <img src='./images/logo.png' className='img-fluid ' alt='Logo' />
+                                <img src='./images/Logo.png' className='img-fluid ' alt='Logo' />
                                 </div>
                                 
                                 <h1 className='pt-5'>Certified Products</h1>

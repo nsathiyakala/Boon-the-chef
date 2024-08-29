@@ -56,6 +56,7 @@ export default function ProductDetails({ cartItems, setCartItems }) {
             <p>{product.description}</p>
             <hr />
             <p><strong>Category:</strong> {product.category}</p>
+            <p><strong>Weight:</strong> {product.weight}</p>
             <div className="input-group mb-3">
               <span className="input-group-text">Quantity</span>
               <input

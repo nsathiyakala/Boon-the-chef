@@ -51,8 +51,8 @@ function Home({cartItems}) {
                             <p> Our products are crafted with meticulous care to deliver exceptional taste and satisfaction.</p>
                         </div>
                         <div className="why-choose-inner">
-                            <h4>Prevention & MSG Free <i className="fa-solid fa-star"></i></h4>
-                            <p> Crafted with Prevention in mind, our products are MSG Free for your health-conscious choices. </p>
+                            <h4>Preservative & MSG Free <i className="fa-solid fa-star"></i></h4>
+                            <p>Our products are Crafted without preservatives and MSG for your health-conscious choices. </p>
                         </div>
                     </div>
                 </div>
@@ -103,7 +103,7 @@ function Home({cartItems}) {
         <Combo />
       </section>
 
-      <section className="offer-sec ">
+      {/* <section className="offer-sec ">
         <div className="container" >
         
             <div className="row " >
@@ -128,7 +128,7 @@ function Home({cartItems}) {
 
             </div>
         </div>
-      </section>
+      </section> */}
 
       {/* ------conbo-end--------- */}
 
@@ -144,11 +144,11 @@ function Home({cartItems}) {
       </section>
 
       
-      <section className='meal-section mt-5 '>
+      {/* <section className='meal-section mt-5 '>
         <div className='container-fluid meal-container'>
           <img src="./images/Web-31.jpg" alt="" />
           </div>
-      </section>
+      </section> */}
       
       <section className='container-fluid testimonal pt-5 pb-5'>
         <h3 className='tesimonals-text text-center'>Testimonial</h3>

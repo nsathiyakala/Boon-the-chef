@@ -13,7 +13,7 @@ export default function ProductCard({product}){
             />
             <div className="card-body d-flex flex-column">
               <h5 className="card-title">
-              <Link to={"/product"+product._id}>{product.name} </Link> 
+              <Link to={"/product/"+product._id}>{product.name} </Link> 
               </h5>
               <p className="card-text card-price">₹{product.price}</p>
               <p className="card-text">Category:{product.category}</p>
